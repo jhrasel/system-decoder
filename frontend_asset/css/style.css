@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0;
+    clear: both;
+    color: #000000;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+input:focus {
+    box-shadow: none;
+}
+select:focus {
+    box-shadow: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.custome_width{
+    max-width: 1440px;
+}
+
+button.mobile{
+    display: none;
+}
+
+
+/* =============== COMMON CSS FOR WEB SITE =============== */
+:root {
+    --main_color1: #16335D;
+    --main_color2: #F48323;
+    --header_color: #232323;
+    --text_color: #8A8B8C;
+}
+
+h1 {
+    font-size: 120px;
+    line-height: 130px;
+    color: #FFF;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 700;
+    color: var(--header_color);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--header_color);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 20px;
+    color: var(--text_color);
+}
+
+a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #16335D;
+    transition: all linear .2s;
+}
+
+/* svg path {
+    fill: ;
+} */
+
+button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFF;
+    background: var(--main_color2);
+    transition: all linear .2s;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+input.form-control {
+    font-size: 16px;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+select {
+    font-size: 16px;
+}
+
+.d_flex{
+    display: flex;
+    align-items: center;
+}
+
+.header_part h6{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--main_color2);
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.header_part h6::after{
+    position: absolute;
+    content: '';
+    bottom: -4px;
+    left: 0;
+    background: var(--main_color1);
+    width: 100%;
+    height: 2px;
+}
+
+.header_part h2{
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.header_part button{
+    margin-top: 30px;
+}
+
+
+.section_height{
+    margin-top: 120px;
+}
+
+.header_height{
+    height: 60px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Header PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.navbar {
+    padding: 0;
+    height: 115px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 15px rgb(0 0 0 / 5%);
+}
+
+.navbar .nav-item{
+    margin: 15px;
+}
+
+.navbar .nav-item:last-child{
+    margin-right: 0;
+}
+
+.navbar .nav-item .nav-link {
+    color: var(--main_color1);
+}
+
+.navbar .nav-item .nav-link:hover{
+    color: var(--main_color2);
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Banner PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#banner{
+    background: var(--main_color1);
+    padding: 80px 0;
+}
+
+#banner .banner_text{
+    color: #FFF;
+}
+
+#banner .banner_text span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#banner .banner_text h4{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+#banner .banner_text p{
+    color: #FFF;
+}
+
+#banner .banner_text button{
+    margin-top: 30px;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START About PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#about .header_part{
+    margin-right: 20px;
+}
+
+#about .about_content .about_item{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    transition: all linear .4s;
+}
+
+#about .about_content .about_item.top{
+    margin-top: 30px;
+}
+
+#about .about_content .about_item:hover{
+    transform: translateY(-7px);
+}
+
+#about .about_content .about_item img {
+    height: 70px;
+    object-fit: cover;
+}
+
+
+#about .about_content .about_item h3{
+    color: var(--main_color2);
+    margin-top: 20px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START What We do PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#what_we_do{
+    background: #F2F2F2;
+    padding: 60px 0;
+}
+
+#what_we_do .what_we_do_img{
+    margin-right: 30px;
+}
+
+.what_we_do_tabs{
+    margin-top: 50px;
+}
+
+.what_we_do_tabs h2 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.what_we_do_tabs h2 button{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: unset;
+    background: var(--main_color2);
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
