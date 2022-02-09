@@ -394,6 +394,16 @@ select {
     START our_service PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+#our_service .row {
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
+#our_service .row .col-lg-4{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 #our_service .header_part{
     text-align: center;
 }
@@ -418,10 +428,36 @@ select {
     transform: translateY(-10px);
 }
 
-.our_service_content .img img{
-    height: 70px;
-    object-fit: cover;
+.our_service_content .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    background: var(--main_color2);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear .2s;
 }
+
+.our_service_content .img svg{
+    font-size: 35px;
+}
+
+.our_service_content .img svg path{
+    fill: #FFF;
+}
+
+.our_service_content:hover .img{
+    background: var(--main_color1);
+}
+
+.our_service_content:hover .text a{
+    color: var(--main_color2);
+}
+
+
 
 .our_service_content .text{
     margin-top: 30px;
@@ -444,10 +480,105 @@ select {
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START  PART
+    START CASE STUDIES PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
+#case_stadies{
+   background: #E5E5E5;
+   padding: 100px 0;
+}
 
 
+#case_stadies .header_part{
+    text-align: center;
+}
+
+#case_stadies .header_part h2{
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/* case_stadies_content */
+.case_stadies_content{
+    margin-top: 60px;
+}
+
+.case_stadies_content .case_stadies_item {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    transition: all linear .2s;
+}
+
+.case_stadies_content .case_stadies_item .img img {
+    border-radius: 15px 15px 0 0;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.case_stadies_content .case_stadies_item .text{
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.case_stadies_content .case_stadies_item .text h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--main_color1);
+    margin-top: 10px;
+    transition: all linear .2s;
+}
+
+.case_stadies_content .case_stadies_item .text p{
+    margin-top: 10px;
+}
+
+.case_stadies_content .case_stadies_item h5{
+    padding: 20px 0;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 28px;
+    border-top: 1px solid var(--text_color);
+    margin-top: 30px;
+    color: var(--main_color1);
+    position: relative;
+    z-index: 9;
+}
+
+.case_stadies_content .case_stadies_item h5 .overlay{
+    position: absolute;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear .3s;
+    border-radius: 0 0 10px 10px;
+    background: var(--main_color1);
+    z-index: 1;
+}
+
+.case_stadies_content .case_stadies_item:hover{
+    transform: translateY(-10px);
+}
+
+.case_stadies_content .case_stadies_item:hover h5{
+    color: #FFF;
+}
+
+.case_stadies_content .case_stadies_item h5 svg{
+    margin-left: 10px;
+}
+
+.case_stadies_content .case_stadies_item:hover h5 .overlay{
+    opacity: 1;
+    z-index: -1;
+    height: 100%;
+}
 
 
 
