@@ -507,9 +507,9 @@ select {
 
 .case_stadies_content .case_stadies_item {
     background: #FFFFFF;
-    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.15); */
     border-radius: 15px;
-    transition: all linear .2s;
+    transition: all linear .3s;
 }
 
 .case_stadies_content .case_stadies_item .img img {
@@ -580,6 +580,36 @@ select {
     height: 100%;
 }
 
+.case_stadies_content .case_stadies_item:hover h4{
+    color: var(--main_color2);
+}
+
+.owl-stage {
+    padding: 10px 0;
+}
+
+.owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+}
+
+button.owl-dot {
+    background: var(--header_color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #C4C4C4 !important;
+    margin-right: 15px;
+}
+
+button.owl-dot.active {
+    background: var(--main_color2) !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
