@@ -613,11 +613,160 @@ button.owl-dot.active {
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START  PART
+    START Blog PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
+#case_stadies.blog {
+    background: #FFF;
+    padding: 0;
+    padding-top: 60px;
+}
+
+#case_stadies.blog .case_stadies_item {
+    box-shadow: 0px 0px 20px 10px rgb(0 0 0 / 20%);
+}
+
+#case_stadies.blog .case_stadies_item h6 {
+    color: var(--text_color);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+#case_stadies.blog .case_stadies_item h3{
+    transition: all linear .2s;
+}
+
+#case_stadies.blog .case_stadies_item .read_more{
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+#case_stadies.blog .case_stadies_item .read_more a{
+    font-size: 20px;
+}
+
+#case_stadies.blog .case_stadies_item .read_more a svg{
+    margin-left: 10px;
+}
+
+#case_stadies.blog .case_stadies_item:hover h3{
+    color: var(--main_color2);
+}
+
+#case_stadies.blog .case_stadies_item:hover a{
+    color: var(--main_color2);
+} 
 
 
 
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Our Lovely Client PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+#Our_Lovely_Client .header_part{
+    text-align: center;
+}
+
+#Our_Lovely_Client .header_part h2 {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.Our_Lovely_Client_slider .owl-stage-outer {
+    padding: 30px 0;
+    padding-top: 130px;
+}
+
+.Our_Lovely_Client_slider .item {
+    background: #FFF;
+    box-shadow: 0 12px 20px 0 rgb(23 28 33 / 16%);
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+    transition: all linear .5s;
+    margin-right: 10px;
+}
+
+.Our_Lovely_Client_slider .owl-item {
+    transition: all linear .3s;
+}
+
+.Our_Lovely_Client_slider .owl-item.active {
+    transform: scale(.9);
+    filter: blur(1px);
+}
+
+.profile_image {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: aliceblue;
+    box-shadow: 0 12px 20px 0 rgb(23 28 33 / 16%);
+    border-radius: 50%;
+    background: #FFF;
+}
+
+.Our_Lovely_Client_slider .item img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.Our_Lovely_Client_slider .item h3{
+    margin-top: 30px;
+    color: var(--main_color2);
+}
+
+.Our_Lovely_Client_slider .item h5{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.Our_Lovely_Client_slider .item p {
+    max-width: 400px;
+    margin: 15px auto 0px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.Our_Lovely_Client_slider .owl-item.active.center {
+    transform: scale(1.1);
+    filter: blur(0px);
+}
+
+.owl-carousel .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-carousel button.owl-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50% !important;
+    border: 1px solid var(--button_color);
+    margin-right: 20px;
+    margin-top: 30px;
+    /* border-radius: 50%; */
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    display: none;
+    background: var(--bg_color);
+    margin: 0 auto;
+}
+
+.owl-carousel button.owl-dot.active span{
+    display: block;
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -629,5 +778,62 @@ button.owl-dot.active {
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START  PART
+    START Footer PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
+#footer{
+    background: var(--main_color1);
+    padding: 60px 0;
+}
+
+.footer_logo .text p{
+    color: #FFF;
+}
+
+.footer_logo .text .social_content{
+    margin-top: 30px;
+}
+
+.footer_logo .text .social_content a{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.footer_logo .text .social_content a:hover{
+    border-radius: 50%;
+    background: var(--main_color2);
+    transform: translateY(-5px);
+    color: #FFF;
+}
+
+.footer_text h3{
+    color: #FFF;
+}
+
+.footer_text ul{
+    margin-top: 30px;
+}
+
+.footer_text ul li{
+    margin-bottom: 10px;
+}
+
+.footer_text ul li a{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer_text ul li a:hover{
+    color: var(--main_color2);
+    transform: translateX(5px);
+}
+
+.footer_text ul li a svg{
+    margin-right: 10px;
+}
