@@ -10,9 +10,25 @@
     <link rel="icon" href="frontend_asset/images/Logo.png">
 
     <!-- Google Font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet"> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="frontend_asset/css/bootstrap.min.css">
@@ -31,355 +47,262 @@
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Navbar PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<nav class="navbar navbar-expand-lg">
 
-    <nav class="navbar navbar-expand-lg">
+    <div class="container custome_width">
 
-        <div class="container custome_width">
+        <a class="navbar-brand" href="index.html">
+            <img src="frontend_asset/images/Logo.png" alt="logo">
+        </a>
 
-            <a class="navbar-brand" href="index.html">
-                <img src="frontend_asset/images/Logo.png" alt="">
-            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
 
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
+                <li class="nav-item custome_dropdown">
+                    <a class="nav-link" href="#">Services</a>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
+                    <div class="nav_drop_content">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
+                        <div class="row d_flex d_justify">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
+                            <div class="col-lg-4">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+                                <div class="nav_drop_item">
 
-                </ul>
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Software Development.png" alt="Software Development">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Software Development</h3>
+                                            <p>Custom Software Development</p>
+                                        </div>
+                                    </a>
 
-                <!-- <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
+                                </div>
 
-            </div>
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Security and Compliance.png" alt="Security and Compliance">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Security and Compliance</h3>
+                                            <p>Network Security</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Advisory.png" alt="Advisory">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Advisory</h3>
+                                            <p>Digital Transformation</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Advanced Tech.png" alt="Advanced Tech">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Advanced Tech</h3>
+                                            <p>Artificial Intelligence</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Artificial Intelligence.png" alt="Artificial Intelligence">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Artificial Intelligence</h3>
+                                            <p>Cloud Infrastructure</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/BI & Analytics.png" alt="BI & Analytics">
+                                        </div>
+                                        <div class="text">
+                                            <h3>BI & Analytics</h3>
+                                            <p>BI Consulting</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Technology</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+
+            </ul>
+
+            <form class="d-flex contact">
+                <a class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+            </form>
 
         </div>
+    </div>
 
-    </nav>
+</nav>
 
-
-    <!-- <div class="header_height"></div> -->
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Banner PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
-    <section id="banner">
+<section id="banner">
 
-        <div class="container custome_width">
+    <div class="container custome_width">
 
+        <div class="row">
 
-            <div class="row d_flex">
+            <div class="col-lg-6">
 
-                <!-- Banner Text -->
-                <div class="col-lg-6">
+                <div class="banner_content">
 
-                    <div class="banner_text">
+                    <h1>We Provide Best IT Services for Your Need</h1>
+                    <p class="wh">Aenean Sollicitudin, Lorem quis Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
 
-                        <span>FIND YOUR SOLUTION</span>
-                        <h4>Best choice for your</h4>
-                        <h1>Startup.</h1>
-                        <p>The full set of services around development and maintenance of complex business-critical applications.</p>
-                        <button>Learn More</button>
+                    <a class="custome_btn btn-12"><span>Click!</span><span>Read More</span></a>
 
-                    </div>
-
-                </div>
-
-                <!-- Banner Image -->
-                <div class="col-lg-6">
-                    <div class="banner_img">
-                        <img src="frontend_asset/images/banner_image.png" alt="" class="img-fluid">
-                    </div>
                 </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <div class="section_height"></div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START About PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
-    <section id="about">
+<section id="about">
 
-        <div class="container custome_width">
+    <div class="section_height"></div>
 
-            <div class="row d_flex">
+    <div class="container custome_width">
 
-                <!-- About Text Part -->
-                <div class="col-lg-6">
+        <div class="row d_flex">
 
-                   <div class="header_part">
-                    
-                        <h6>ABOUT US</h6>
-                        <h2>Innovating with a Digital Mindset</h2>
+            <!-- Text Part -->
+            <div class="col-lg-6">
+
+                <div class="about_content">
+
+                    <div class="header">
+                        <h4>15 Years of Experience</h4>
+                        <h2>Right Partner for Software Inno vation</h2>
                         <p>Since 2007 we have been a visionary and a reliable software engineering partner for world-class brands. We are a boutique digital transformation consultancy and software development company that provides cutting edge engineering solutions.</p>
-                        <button>Get in Touch</button>
-
-                   </div>
-
-                </div>
-
-                <!-- About item -->
-                <div class="col-lg-6">
-
-                    <div class="about_content">
-
+                    </div>
+    
+                    <div class="experience_support">
+                        
                         <div class="row">
-
+    
                             <div class="col-lg-6">
-
-                                <div class="about_item top">
-
+    
+                                <div class="experience_support_item">
                                     <div class="img">
-                                        <img src="frontend_asset/images/Exprience Design.png" alt="">
+                                        <img src="frontend_asset/images/Experience.png" alt="Experience">
                                     </div>
-
-                                    <h3>Exprience Design</h3>
-
+                
+                                    <div class="text">
+                                        <h3>Experience</h3>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                    </div>
                                 </div>
-
+    
                             </div>
-
+    
                             <div class="col-lg-6">
-
-                                <div class="about_item">
-
+    
+                                <div class="experience_support_item">
                                     <div class="img">
-                                        <img src="frontend_asset/images/Digital Service.png" alt="">
+                                        <img src="frontend_asset/images/Quick Support.png" alt="Quick Support">
                                     </div>
-
-                                    <h3>Digital Services</h3>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-6">
-
-                                <div class="about_item top">
-
-                                    <div class="img">
-                                        <img src="frontend_asset/images/Content Engineering.png" alt="">
+                
+                                    <div class="text">
+                                        <h3>Quick Support</h3>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
                                     </div>
-
-                                    <h3>Content Engineering</h3>
-
                                 </div>
-
+    
                             </div>
-
-                            <div class="col-lg-6">
-
-                                <div class="about_item">
-
-                                    <div class="img">
-                                        <img src="frontend_asset/images/Data Structure.png" alt="">
-                                    </div>
-
-                                    <h3>Data Structuring</h3>
-
-                                </div>
-
-                            </div>
-
+    
                         </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <div class="section_height"></div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START What We do PART
----------------------------------------------------------------------------------------------------------------------------------------------------  -->
-    <section id="what_we_do">
-
-        <div class="container custome_width">
-
-            <div class="row d_flex">
-
-                <!-- Image Part -->
-                <div class="col-lg-7">
-                    
-                    <div class="what_we_do_img">
-                        <img src="frontend_asset/images/what_we_do.png" alt="" class="img-fluid">
-                    </div>
-
-                </div>
-
-                <!-- text part -->
-                <div class="col-lg-5">
-
-                    <div class="header_part">
-                    
-                        <h6>WHAT WE DO</h6>
-                        <h2>We Provide Flexible IT Services</h2>
-                        <p>Fortune 500 enterprises and established brands trust our software development.</p>
-
-                        <div class="what_we_do_tabs">
-
-                            <div class="accordion" id="accordionExample">
-
-                                <!-- Internet of Things -->
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Internet of Things
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      Accordion Item #2
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                      Accordion Item #3
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                    </div>
-                                  </div>
-                                </div>
-
-                              </div>
-
-                        </div>
-
-                   </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <div class="section_height"></div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START OUR TECHNOLOGY PART
----------------------------------------------------------------------------------------------------------------------------------------------------  -->
-    <section id="our_technology">
-
-        <div class="container custome_width">
-
-            <div class="row d_flex">
-
-                <!-- Text Part -->
-                <div class="col-lg-5">
-
-                    <div class="header_part">
-                    
-                        <h6>OUR TECHNOLOGY</h6>
-                        <h2>– Top Software Development Technology</h2>
-                        <p>Since 2007 we have been a visionary and a reliable software engineering partner for world-class brands. We are a boutique digital transformation consultancy and software development company that provides cutting edge engineering solutions.</p>
-                        <button>Get in Touch</button>
-                        <button>REACT JS</button>
-                        <button>ANGULAR</button>
-                        <button>PHP</button>
-                        <button>JAVA</button>
-                        <button>PYTHON</button>
-
-                    </div>
-
-                </div>
-
-                <!-- Image Part -->
-                <div class="col-lg-7">
-
-                    <div class="our_technology_img">
-                        <img src="frontend_asset/images/technology.png" alt="" class="img-fluid">
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <div class="section_height"></div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START OUR SERVICE PART
----------------------------------------------------------------------------------------------------------------------------------------------------  -->
-    <section id="our_service">
-
-        <div class="container custome_width">
-
-            <div class="row">
-               
-                <div class="col-lg-6 m-auto">
-
-                    <div class="header_part">
-                    
-                        <h6>OUR SERVICE</h6>
-                        <h2>What We Offer for You</h2>
-                        <p>Integrio deep industry expertise enables global brands to hit the ground running..</p>
     
                     </div>
 
@@ -387,117 +310,163 @@
 
             </div>
 
-            <!-- Service Content -->
+            <!-- Img -->
+            <div class="col-lg-6">
+
+                <div class="about_img">
+
+                    <img src="frontend_asset/images/about.png" class="img-fluid" alt="about">
+
+                    <div class="about_overlay d_flex d_justify">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/about_overlay.png" alt="">
+                        </div>
+
+                        <div class="text">
+                            <h3>4.5K</h3>
+                            <p>Satisfied Clients</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Service PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="service">
+
+    <div class="section_height"></div>
+
+    <div class="service_overlay">
+        <img src="frontend_asset/images/service-shape.png" alt="service-shape">
+    </div>
+
+    <div class="container custome_width">
+
         <div class="row">
 
-            <!-- part-1 -->
-            <div class="col-lg-4">
+            <div class="col-lg-7 m-auto">
 
-                <div class="our_service_content">
-
-                    <div class="img">
-                        <img src="frontend_asset/images/interface.png" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="text">
-                        <h3>Interface Design</h3>
-                        <p>Our experience design arm, method, helps businesses connect the dots between their products.</p>
-                        <a href="">Discover Now  <img src="frontend_asset/images/arrow.png" alt=""></a>
-                    </div>
-
+                <div class="header text-center">
+                    <h4>Our Services</h4>
+                    <h2>We have done lot's of Services <br> Let's check some of them</h2>
+                    <!-- <span>My Best Services</span> -->
                 </div>
 
             </div>
 
-            <!-- part-2 -->
-            <div class="col-lg-4">
+        </div>
 
-                <div class="our_service_content">
+        <!-- Service Content -->
+        <div class="service_content">
+            
+            <div class="row">
 
-                    <div class="img">
-                        <img src="frontend_asset/images/interface.png" alt="" class="img-fluid">
-                    </div>
+                <!-- PSD Tamplate Design -->
+                <div class="col-lg-6">
 
-                    <div class="text">
-                        <h3>Interface Design</h3>
-                        <p>Our experience design arm, method, helps businesses connect the dots between their products.</p>
-                        <a href="">Discover Now  <img src="frontend_asset/images/arrow.png" alt=""></a>
-                    </div>
+                    <div class="service_item box_shadow d_flex">
 
-                </div>
+                        <div class="text">
+                            <h3>PSD Tamplate Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum praesentium nisi quis repellat est ducimus architecto temporibus.</p>
+                            <ul>
+                                <li>Motion Graphic Design</li>
+                                <li>3D animation Design</li>
+                                <li>Info Graphic Design</li>
+                                <li>Vector Design</li>
+                            </ul>
+                        </div>
 
-            </div>
+                        <div class="img">
+                            <img src="frontend_asset/images/psd.png" class="img-fluid" alt="">
+                        </div>
 
-            <!-- part-3 -->
-            <div class="col-lg-4">
-
-                <div class="our_service_content">
-
-                    <div class="img">
-                        <img src="frontend_asset/images/interface.png" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="text">
-                        <h3>Interface Design</h3>
-                        <p>Our experience design arm, method, helps businesses connect the dots between their products.</p>
-                        <a href="">Discover Now  <img src="frontend_asset/images/arrow.png" alt=""></a>
                     </div>
 
                 </div>
 
-            </div>
+                <!-- Mobile Apps Design -->
+                <div class="col-lg-6">
 
-            <!-- part-4 -->
-            <div class="col-lg-4">
+                    <div class="service_item box_shadow d_flex bg2">
 
-                <div class="our_service_content">
+                        <div class="text">
+                            <h3>Mobile Apps Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum praesentium nisi quis repellat est ducimus architecto temporibus.</p>
+                            <ul>
+                                <li>Motion Graphic Design</li>
+                                <li>3D animation Design</li>
+                                <li>Info Graphic Design</li>
+                                <li>Vector Design</li>
+                            </ul>
+                        </div>
 
-                    <div class="img">
-                        <img src="frontend_asset/images/interface.png" alt="" class="img-fluid">
-                    </div>
+                        <div class="img">
+                            <img src="frontend_asset/images/Mobile Apps Design.png" class="img-fluid" alt="">
+                        </div>
 
-                    <div class="text">
-                        <h3>Interface Design</h3>
-                        <p>Our experience design arm, method, helps businesses connect the dots between their products.</p>
-                        <a href="">Discover Now  <img src="frontend_asset/images/arrow.png" alt=""></a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- part-5 -->
-            <div class="col-lg-4">
-
-                <div class="our_service_content">
-
-                    <div class="img">
-                        <img src="frontend_asset/images/interface.png" alt="" class="img-fluid">
-                    </div>
-
-                    <div class="text">
-                        <h3>Interface Design</h3>
-                        <p>Our experience design arm, method, helps businesses connect the dots between their products.</p>
-                        <a href="">Discover Now  <img src="frontend_asset/images/arrow.png" alt=""></a>
                     </div>
 
                 </div>
 
-            </div>
+                <!-- SEO Optimization -->
+                <div class="col-lg-6">
 
-            <!-- part-5 -->
-            <div class="col-lg-4">
+                    <div class="service_item box_shadow d_flex bg3">
 
-                <div class="our_service_content">
+                        <div class="text">
+                            <h3>SEO Optimization</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum praesentium nisi quis repellat est ducimus architecto temporibus.</p>
+                            <ul>
+                                <li>Motion Graphic Design</li>
+                                <li>3D animation Design</li>
+                                <li>Info Graphic Design</li>
+                                <li>Vector Design</li>
+                            </ul>
+                        </div>
 
-                    <div class="img">
-                        <img src="frontend_asset/images/interface.png" alt="" class="img-fluid">
+                        <div class="img">
+                            <img src="frontend_asset/images/SEO Optimization.png" class="img-fluid" alt="">
+                        </div>
+
                     </div>
 
-                    <div class="text">
-                        <h3>Interface Design</h3>
-                        <p>Our experience design arm, method, helps businesses connect the dots between their products.</p>
-                        <a href="">Discover Now  <img src="frontend_asset/images/arrow.png" alt=""></a>
+                </div>
+
+                <!-- Web Development -->
+                <div class="col-lg-6">
+
+                    <div class="service_item box_shadow d_flex bg4">
+
+                        <div class="text">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum praesentium nisi quis repellat est ducimus architecto temporibus.</p>
+                            <ul>
+                                <li>Motion Graphic Design</li>
+                                <li>3D animation Design</li>
+                                <li>Info Graphic Design</li>
+                                <li>Vector Design</li>
+                            </ul>
+                        </div>
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Web Development.png" class="img-fluid" alt="">
+                        </div>
+
                     </div>
 
                 </div>
@@ -506,33 +475,1448 @@
 
         </div>
 
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Our Working Process PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="working_process">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row d_flex">
+
+            <div class="col-lg-5">
+
+                <div class="working_process_img">
+                    
+                    <div class="img">
+                        <img src="frontend_asset/images/working_process.png" class="img-fluid w-100" alt="working_process">
+
+                        <div class="working_overlay">
+
+                            <div class="header">
+                                <h4>Our Working Process</h4>
+                                <h2 class="wh">How Our Services Will Help You to Grow Your Business</h2>
+                                <a class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <div class="working_process_content">
+
+                    <div class="row">
+
+                        <div class="col-lg-6">
+
+                            <div class="working_process_item">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/Discovery.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>Discovery</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                                </div>
+
+                                <!-- overlay -->
+                                <div class="number_overlay">
+                                    <span>01</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <div class="working_process_item">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/Planning.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>Planning</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                                </div>
+
+                                <!-- overlay -->
+                                <div class="number_overlay">
+                                    <span>02</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <div class="working_process_item last_child">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/Execute.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>Execute</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                                </div>
+
+                                <!-- overlay -->
+                                <div class="number_overlay">
+                                    <span>03</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+
+                            <div class="working_process_item last_child">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/Deliver.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>Deliver</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis tempor nunc ac sollicitudin Interdum.</p>
+                                </div>
+
+                                <!-- overlay -->
+                                <div class="number_overlay">
+                                    <span>04</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
-    </section>
-
-
-
-
-
+    </div>
 
     <div class="section_height"></div>
+
+</section>
+
+
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Lets talk PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="lets_talk">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-6 m-auto">
+
+                <div class="header">
+                    <h4>Let's Talk</h4>
+                    <h2 class="wh">We Are Adding Kinds of It Services That You Grow Success</h2>
+                    <a class="custome_btn btn-12"><span>Click!</span><span>Contact us</span></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Case Study PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="case_study">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-6 m-auto">
+
+                <div class="header text-center">
+                    <h4>Case Study</h4>
+                    <h2>Let's Build Your Website!</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Slider -->
+        <div class="case_study_slider">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="owl-carousel case_slider owl-theme">
+
+                        <!-- Item 1 -->
+                        <div class="item">
+
+                            <div class="img">
+                                <img src="frontend_asset/images/Case Study1.png" class="img-fluid" alt="Case Study">
+                                
+                                <div class="case_study_overlay box_shadow">
+
+                                    <a href="">
+                                        <h3>Web Development</h3>
+                                        <p>Design / Development</p>
+                                    </a>
+
+                                    <div class="arrow d_flex d_justify">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="item">
+
+                            <div class="img">
+                                <img src="frontend_asset/images/Case Study2.png" class="img-fluid" alt="Case Study">
+                                
+                                <div class="case_study_overlay box_shadow">
+
+                                    <a href="">
+                                        <h3>Social Media App</h3>
+                                        <p>Design / Social</p>
+                                    </a>
+
+                                    <div class="arrow d_flex d_justify">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="item">
+
+                            <div class="img">
+                                <img src="frontend_asset/images/Case Study3.png" class="img-fluid" alt="Case Study">
+                                
+                                <div class="case_study_overlay box_shadow">
+
+                                    <a href="">
+                                        <h3>UI/UX Research</h3>
+                                        <p>UI/UX Design / Research</p>
+                                    </a>
+
+                                    <div class="arrow d_flex d_justify">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="item">
+
+                            <div class="img">
+                                <img src="frontend_asset/images/Case Study1.png" class="img-fluid" alt="Case Study">
+                                
+                                <div class="case_study_overlay box_shadow">
+
+                                    <a href="">
+                                        <h3>Web Development</h3>
+                                        <p>Design / Development</p>
+                                    </a>
+
+                                    <div class="arrow d_flex d_justify">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="item">
+
+                            <div class="img">
+                                <img src="frontend_asset/images/Case Study2.png" class="img-fluid" alt="Case Study">
+                                
+                                <div class="case_study_overlay box_shadow">
+
+                                    <a href="">
+                                        <h3>Social Media App</h3>
+                                        <p>Design / Social</p>
+                                    </a>
+
+                                    <div class="arrow d_flex d_justify">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="item">
+
+                            <div class="img">
+                                <img src="frontend_asset/images/Case Study3.png" class="img-fluid" alt="Case Study">
+                                
+                                <div class="case_study_overlay box_shadow">
+
+                                    <a href="">
+                                        <h3>UI/UX Research</h3>
+                                        <p>UI/UX Design / Research</p>
+                                    </a>
+
+                                    <div class="arrow d_flex d_justify">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Technology PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="technology">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+                    <h4>Technology</h4>
+                    <h2>We Deliver Our Best Solution With The Goal of Trusting</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae ante eget odio egestas pretium. Vestibulum sagittis dictum sem, imperdiet consectetur nunc vulputate non. Duis sit amet aliquet velit. Ut malesuada urna et ultrices efficitur. Nulla turpis dui, rhoncus sed erat quis, pharetra scelerisque leo.</p>
+                    <a class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="technology_content">
+
+                    <div class="row">
+
+                        <!-- item 1 -->
+                        <div class="col-lg-4">
+
+                            <div class="technology_item">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/androyed.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>Android</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item 2 -->
+                        <div class="col-lg-4">
+
+                            <div class="technology_item">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/web.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>Web</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item 3 -->
+                        <div class="col-lg-4">
+
+                            <div class="technology_item">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/ios.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>ios</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item 4 -->
+                        <div class="col-lg-4">
+
+                            <div class="technology_item last_child">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/web.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>TV</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item 5 -->
+                        <div class="col-lg-4">
+
+                            <div class="technology_item last_child">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/watch.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>Watch</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- item 6 -->
+                        <div class="col-lg-4">
+
+                            <div class="technology_item last_child">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/iot.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h3>IoT</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Done Project PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="done_project">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-5 m-auto">
+
+                <div class="header text-center">
+                    <h4>Done Project</h4>
+                    <h2>Introduce Our Projects and Check Recent Work</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Slider -->
+    <div class="case_study_slider">
+
+        <div class="owl-carousel done_project_slider owl-theme">
+
+            <!-- Item 1 -->
+            <div class="item">
+
+                <div class="img">
+                    <img src="frontend_asset/images/Case Study1.png" class="img-fluid" alt="Case Study">
+                    
+                    <div class="case_study_overlay box_shadow">
+
+                        <a href="">
+                            <h3>Web Development</h3>
+                            <p>Design / Development</p>
+                        </a>
+
+                        <div class="arrow d_flex d_justify">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item">
+
+                <div class="img">
+                    <img src="frontend_asset/images/Case Study2.png" class="img-fluid" alt="Case Study">
+                    
+                    <div class="case_study_overlay box_shadow">
+
+                        <a href="">
+                            <h3>Social Media App</h3>
+                            <p>Design / Social</p>
+                        </a>
+
+                        <div class="arrow d_flex d_justify">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Item 3 -->
+            <div class="item">
+
+                <div class="img">
+                    <img src="frontend_asset/images/Case Study3.png" class="img-fluid" alt="Case Study">
+                    
+                    <div class="case_study_overlay box_shadow">
+
+                        <a href="">
+                            <h3>UI/UX Research</h3>
+                            <p>UI/UX Design / Research</p>
+                        </a>
+
+                        <div class="arrow d_flex d_justify">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item">
+
+                <div class="img">
+                    <img src="frontend_asset/images/Case Study1.png" class="img-fluid" alt="Case Study">
+                    
+                    <div class="case_study_overlay box_shadow">
+
+                        <a href="">
+                            <h3>Web Development</h3>
+                            <p>Design / Development</p>
+                        </a>
+
+                        <div class="arrow d_flex d_justify">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Item 5 -->
+            <div class="item">
+
+                <div class="img">
+                    <img src="frontend_asset/images/Case Study2.png" class="img-fluid" alt="Case Study">
+                    
+                    <div class="case_study_overlay box_shadow">
+
+                        <a href="">
+                            <h3>Social Media App</h3>
+                            <p>Design / Social</p>
+                        </a>
+
+                        <div class="arrow d_flex d_justify">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Item 6 -->
+            <div class="item">
+
+                <div class="img">
+                    <img src="frontend_asset/images/Case Study3.png" class="img-fluid" alt="Case Study">
+                    
+                    <div class="case_study_overlay box_shadow">
+
+                        <a href="">
+                            <h3>UI/UX Research</h3>
+                            <p>UI/UX Design / Research</p>
+                        </a>
+
+                        <div class="arrow d_flex d_justify">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item">
+
+                <div class="img">
+                    <img src="frontend_asset/images/Case Study1.png" class="img-fluid" alt="Case Study">
+                    
+                    <div class="case_study_overlay box_shadow">
+
+                        <a href="">
+                            <h3>Web Development</h3>
+                            <p>Design / Development</p>
+                        </a>
+
+                        <div class="arrow d_flex d_justify">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Item 5 -->
+            <div class="item">
+
+                <div class="img">
+                    <img src="frontend_asset/images/Case Study2.png" class="img-fluid" alt="Case Study">
+                    
+                    <div class="case_study_overlay box_shadow">
+
+                        <a href="">
+                            <h3>Social Media App</h3>
+                            <p>Design / Social</p>
+                        </a>
+
+                        <div class="arrow d_flex d_justify">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Item 6 -->
+            <div class="item">
+
+                <div class="img">
+                    <img src="frontend_asset/images/Case Study3.png" class="img-fluid" alt="Case Study">
+                    
+                    <div class="case_study_overlay box_shadow">
+
+                        <a href="">
+                            <h3>UI/UX Research</h3>
+                            <p>UI/UX Design / Research</p>
+                        </a>
+
+                        <div class="arrow d_flex d_justify">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Our Clients PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="our_clients">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-5 m-auto">
+
+                <div class="header text-center">
+                    <h4>Our Clients</h4>
+                    <h2>Our Clients Feedback</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="our_clients_slider">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="owl-carousel our_clients_slider_part owl-theme">
+
+                        <!-- Item 1 -->
+                        <div class="item">
+            
+                            <div class="our_clients_slider_item d_justify">
+                        
+                                <!-- Header Part -->
+                                <div class="profile_part d_flex">
+            
+                                    <div class="profile_img d_flex">
+            
+                                        <div class="img">
+                                            <img src="frontend_asset/images/profile.png" alt="">
+                                        </div>
+            
+                                        <div class="text">
+                                            <h3>Md. Jafrul Hasan</h3>
+                                            <h5>Founder</h5>
+                                        </div>
+            
+                                    </div>
+            
+                                    <div class="brand_part">
+                                        <img src="frontend_asset/images/brand1.png" class="img-fluid" alt="">
+                                    </div>
+            
+                                </div>
+            
+                                <!-- Middle part -->
+                                <div class="text">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, impedit incidunt, eligendi ut ducimus esse facere molestias eum dignissimos laboriosam quaerat debitis corrupti nobis explicabo, blanditiis dolorem pariatur unde dicta.</p>
+                                </div>
+            
+                                <!-- Footer part -->
+                                <div class="client_footer d_flex d_justify">
+            
+                                    <div class="stars">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+            
+                                    <div class="koma">
+                                        <img src="frontend_asset/images/koma.png" alt="">
+                                    </div>
+            
+                                </div>
+                                
+            
+                            </div>
+            
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="item">
+            
+                            <div class="our_clients_slider_item d_justify">
+                        
+                                <!-- Header Part -->
+                                <div class="profile_part d_flex">
+            
+                                    <div class="profile_img d_flex">
+            
+                                        <div class="img">
+                                            <img src="frontend_asset/images/profile.png" alt="">
+                                        </div>
+            
+                                        <div class="text">
+                                            <h3>Md. Jafrul Hasan</h3>
+                                            <h5>Founder</h5>
+                                        </div>
+            
+                                    </div>
+            
+                                    <div class="brand_part">
+                                        <img src="frontend_asset/images/brand2.png" class="img-fluid" alt="">
+                                    </div>
+            
+                                </div>
+            
+                                <!-- Middle part -->
+                                <div class="text">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, impedit incidunt, eligendi ut ducimus esse facere molestias eum dignissimos laboriosam quaerat debitis corrupti nobis explicabo, blanditiis dolorem pariatur unde dicta.</p>
+                                </div>
+            
+                                <!-- Footer part -->
+                                <div class="client_footer d_flex d_justify">
+            
+                                    <div class="stars">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+            
+                                    <div class="koma">
+                                        <img src="frontend_asset/images/koma.png" alt="">
+                                    </div>
+            
+                                </div>
+                                
+            
+                            </div>
+            
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="item">
+            
+                            <div class="our_clients_slider_item d_justify">
+                        
+                                <!-- Header Part -->
+                                <div class="profile_part d_flex">
+            
+                                    <div class="profile_img d_flex">
+            
+                                        <div class="img">
+                                            <img src="frontend_asset/images/profile.png" alt="">
+                                        </div>
+            
+                                        <div class="text">
+                                            <h3>Md. Jafrul Hasan</h3>
+                                            <h5>Founder</h5>
+                                        </div>
+            
+                                    </div>
+            
+                                    <div class="brand_part">
+                                        <img src="frontend_asset/images/brand3.png" class="img-fluid" alt="">
+                                    </div>
+            
+                                </div>
+            
+                                <!-- Middle part -->
+                                <div class="text">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, impedit incidunt, eligendi ut ducimus esse facere molestias eum dignissimos laboriosam quaerat debitis corrupti nobis explicabo, blanditiis dolorem pariatur unde dicta.</p>
+                                </div>
+            
+                                <!-- Footer part -->
+                                <div class="client_footer d_flex d_justify">
+            
+                                    <div class="stars">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+            
+                                    <div class="koma">
+                                        <img src="frontend_asset/images/koma.png" alt="">
+                                    </div>
+            
+                                </div>
+                                
+            
+                            </div>
+            
+                        </div>
+
+                        <!-- Item 1 -->
+                        <div class="item">
+            
+                            <div class="our_clients_slider_item d_justify">
+                        
+                                <!-- Header Part -->
+                                <div class="profile_part d_flex">
+            
+                                    <div class="profile_img d_flex">
+            
+                                        <div class="img">
+                                            <img src="frontend_asset/images/profile.png" alt="">
+                                        </div>
+            
+                                        <div class="text">
+                                            <h3>Md. Jafrul Hasan</h3>
+                                            <h5>Founder</h5>
+                                        </div>
+            
+                                    </div>
+            
+                                    <div class="brand_part">
+                                        <img src="frontend_asset/images/brand1.png" class="img-fluid" alt="">
+                                    </div>
+            
+                                </div>
+            
+                                <!-- Middle part -->
+                                <div class="text">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, impedit incidunt, eligendi ut ducimus esse facere molestias eum dignissimos laboriosam quaerat debitis corrupti nobis explicabo, blanditiis dolorem pariatur unde dicta.</p>
+                                </div>
+            
+                                <!-- Footer part -->
+                                <div class="client_footer d_flex d_justify">
+            
+                                    <div class="stars">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+            
+                                    <div class="koma">
+                                        <img src="frontend_asset/images/koma.png" alt="">
+                                    </div>
+            
+                                </div>
+                                
+            
+                            </div>
+            
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="item">
+            
+                            <div class="our_clients_slider_item d_justify">
+                        
+                                <!-- Header Part -->
+                                <div class="profile_part d_flex">
+            
+                                    <div class="profile_img d_flex">
+            
+                                        <div class="img">
+                                            <img src="frontend_asset/images/profile.png" alt="">
+                                        </div>
+            
+                                        <div class="text">
+                                            <h3>Md. Jafrul Hasan</h3>
+                                            <h5>Founder</h5>
+                                        </div>
+            
+                                    </div>
+            
+                                    <div class="brand_part">
+                                        <img src="frontend_asset/images/brand2.png" class="img-fluid" alt="">
+                                    </div>
+            
+                                </div>
+            
+                                <!-- Middle part -->
+                                <div class="text">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, impedit incidunt, eligendi ut ducimus esse facere molestias eum dignissimos laboriosam quaerat debitis corrupti nobis explicabo, blanditiis dolorem pariatur unde dicta.</p>
+                                </div>
+            
+                                <!-- Footer part -->
+                                <div class="client_footer d_flex d_justify">
+            
+                                    <div class="stars">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+            
+                                    <div class="koma">
+                                        <img src="frontend_asset/images/koma.png" alt="">
+                                    </div>
+            
+                                </div>
+                                
+            
+                            </div>
+            
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="item">
+            
+                            <div class="our_clients_slider_item d_justify">
+                        
+                                <!-- Header Part -->
+                                <div class="profile_part d_flex">
+            
+                                    <div class="profile_img d_flex">
+            
+                                        <div class="img">
+                                            <img src="frontend_asset/images/profile.png" alt="">
+                                        </div>
+            
+                                        <div class="text">
+                                            <h3>Md. Jafrul Hasan</h3>
+                                            <h5>Founder</h5>
+                                        </div>
+            
+                                    </div>
+            
+                                    <div class="brand_part">
+                                        <img src="frontend_asset/images/brand3.png" class="img-fluid" alt="">
+                                    </div>
+            
+                                </div>
+            
+                                <!-- Middle part -->
+                                <div class="text">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, impedit incidunt, eligendi ut ducimus esse facere molestias eum dignissimos laboriosam quaerat debitis corrupti nobis explicabo, blanditiis dolorem pariatur unde dicta.</p>
+                                </div>
+            
+                                <!-- Footer part -->
+                                <div class="client_footer d_flex d_justify">
+            
+                                    <div class="stars">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+            
+                                    <div class="koma">
+                                        <img src="frontend_asset/images/koma.png" alt="">
+                                    </div>
+            
+                                </div>
+                                
+            
+                            </div>
+            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Blog PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="blog">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-5 m-auto">
+
+                <div class="header text-center">
+                    <h4>Latest Blog</h4>
+                    <h2>Let’s Check Some Latest Blog</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Blog -->
+        <div class="blog_content">
+
+            <div class="row">
+
+                <!-- item 1 -->
+                <div class="col-lg-4">
+
+                    <div class="blog_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/blog1.png" class="img-fluid w-100" alt="blog">
+
+                            <div class="calender_overlay">
+                                <h4 class="wh">14 <span>Dec</span></h4>
+                            </div>
+
+                        </div>
+
+                        <div class="text">
+
+                            <div class="users d_flex">
+
+                                <div class="user_item">
+                                    <i class="fas fa-user"></i>
+                                    <span>By Admin</span>
+                                </div>
+
+                                <div class="user_item">
+                                    <i class="fas fa-tag"></i>
+                                    <span>By Admin</span>
+                                </div>
+
+                            </div>
+
+                            <h3>Product Idea Solution for New Generation</h3>
+                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+                            <a href="" class="d_flex">Read More <i class="fas fa-angle-right"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item 2 -->
+                <div class="col-lg-4">
+
+                    <div class="blog_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/blog2.png" class="img-fluid w-100" alt="blog">
+
+                            <div class="calender_overlay">
+                                <h4 class="wh">14 <span>Dec</span></h4>
+                            </div>
+
+                        </div>
+
+                        <div class="text">
+
+                            <div class="users d_flex">
+
+                                <div class="user_item">
+                                    <i class="fas fa-user"></i>
+                                    <span>By Admin</span>
+                                </div>
+
+                                <div class="user_item">
+                                    <i class="fas fa-tag"></i>
+                                    <span>By Admin</span>
+                                </div>
+
+                            </div>
+
+                            <h3>Product Idea Solution for New Generation</h3>
+                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+                            <a href="" class="d_flex">Read More <i class="fas fa-angle-right"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item 3 -->
+                <div class="col-lg-4">
+
+                    <div class="blog_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/blog3.png" class="img-fluid w-100" alt="blog">
+
+                            <div class="calender_overlay">
+                                <h4 class="wh">14 <span>Dec</span></h4>
+                            </div>
+
+                        </div>
+
+                        <div class="text">
+
+                            <div class="users d_flex">
+
+                                <div class="user_item">
+                                    <i class="fas fa-user"></i>
+                                    <span>By Admin</span>
+                                </div>
+
+                                <div class="user_item">
+                                    <i class="fas fa-tag"></i>
+                                    <span>By Admin</span>
+                                </div>
+
+                            </div>
+
+                            <h3>Product Idea Solution for New Generation</h3>
+                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+                            <a href="" class="d_flex">Read More <i class="fas fa-angle-right"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Footer PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<footer id="footer">
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <div class="footer_logo">
+
+                    <div class="img">
+                        <img src="frontend_asset/images/footer_logo.png" alt="">
+                    </div>
+
+                    <div class="text">
+                        <p class="wh">Integrio is  a boutique digital transformation consultancy & software development company that provides IT solutions.</p>
+                    </div>
+
+                    <div class="socila_icon d_flex">
+
+                        <a href="" class="d_flex">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="" class="d_flex">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="" class="d_flex">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="" class="d_flex">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-8">
+
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+    
+                        <div class="footer_item">
+        
+                            <h3 class="wh">Service</h3>
+        
+                            <ul>
+        
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Interface Design</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Seo Optimizer</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Graphic Design</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Digital Marketing</a>
+                                </li>
+        
+                            </ul>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-lg-4">
+        
+                        <div class="footer_item">
+        
+                            <h3 class="wh">Service</h3>
+        
+                            <ul>
+        
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Interface Design</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Seo Optimizer</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Graphic Design</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Digital Marketing</a>
+                                </li>
+                                
+                            </ul>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-lg-4">
+        
+                        <div class="footer_item">
+        
+                            <h3 class="wh">Contact Us</h3>
+        
+                            <ul>
+        
+                                <li class="wh">
+                                    <i class="fas fa-map-marker-alt"></i> House#28, Road#9, Block#C, Section#12, Pallabi, Dhaka-1216, Bangladesh
+                                </li>
+        
+                                <li class="wh">
+                                    <i class="fas fa-phone-alt"></i> +880 1751 414 572
+                                </li class="wh">
+        
+                                <li class="wh">
+                                    <i class="fas fa-envelope"></i> contact@systemdecoder.com
+                                </li>
+                                
+                            </ul>
+        
+                        </div>
+        
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<footer id="tiny_footer" class="text-center">
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-8 m-auto">
+                <p>© 2020 digeco. All Rights Reserved by Syetem Decoder</p>
+            </div>
+
+        </div>
+
+    </div>
+    
+</footer>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START  PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
 
 
-
-    <!-- custome_width -->
-
-
-
-    <div class="section_height"></div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START  PART
----------------------------------------------------------------------------------------------------------------------------------------------------  -->
-
-
-
+<!-- <div class="p-4">
+    <a href="" class="custome_btn">
+        Draw Border
+    </a>
+</div> -->
 
 
 
