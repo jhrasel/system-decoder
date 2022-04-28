@@ -205,6 +205,7 @@ a.tag:hover {
     height: 100%;
     line-height: 90px;
     height: 90px;
+    font-family: 'PT Serif', serif;
 }
 
 .navbar .nav-item .nav-link.active {
@@ -672,7 +673,7 @@ a.tag:hover {
     background: var(--bg_color);
 }
 
-.case_study_slider .owl-nav button {
+.owl-nav button {
     background: var(--bg_color) !important;
     width: 30px;
     height: 30px;
@@ -680,22 +681,22 @@ a.tag:hover {
     transition: all linear .2s;
 }
 
-.case_study_slider .owl-nav button.owl-prev {
+.owl-nav button.owl-prev {
     margin-right: 15px;
 }
 
-.case_study_slider .owl-nav button span {
+.owl-nav button span {
     font-size: 25px;
     line-height: 22px;
     color: #FFF;
     transition: all linear .2s;
 }
 
-.case_study_slider .owl-nav button:hover {
+.owl-nav button:hover {
     background: var(--bg_color2) !important;
 }
 
-.case_study_slider .owl-nav button:hover span {
+.owl-nav button:hover span {
     color: #FFF;
 }
 
@@ -846,6 +847,23 @@ a.tag:hover {
 #our_clients .owl-carousel .owl-stage{
     padding: 15px 0;
 }
+
+
+/* Arrow */
+#our_clients .owl-nav {
+    margin-top: 30px;
+}
+
+#our_clients button.owl-prev{
+    left: 0;
+}
+
+#our_clients button.owl-next {
+    right: 0;
+    position: absolute;
+}
+
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Blog PART
