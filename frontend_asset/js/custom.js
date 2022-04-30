@@ -1,5 +1,31 @@
 $(function() {
 
+    // service_slider
+    $('.owl-carousel.service_slider').owlCarousel({
+        // loop:true,
+        margin:30,
+        autoPlay: true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:2,
+                nav:true,
+                loop:false
+            }
+        }
+    })
+
     // case_slider
     $('.owl-carousel.case_slider').owlCarousel({
         // loop:true,
