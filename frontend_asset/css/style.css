@@ -571,6 +571,10 @@ a.tag:hover {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START at_a_glance PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
+#at_a_glance{
+    background: url(../images/section_bg.png);;
+}
+
 .at_a_glance_content{
     background: #fff;
     box-shadow: 30px 35px 119px 0 rgb(0 0 0 / 16%);
@@ -816,12 +820,13 @@ a.tag:hover {
     z-index: 9;
     transition: all linear .3s;
     box-shadow: 0px 0px 16px rgb(0 0 0 / 28%);
-    opacity: 0;
+    display: none;
+    
 }
 
 .technology-logos span:hover .img .overlay {
-    opacity: 1;
     top: -130px;
+    display: block;
 } 
 
 .technology-logos span .img .overlay::after {
@@ -1359,7 +1364,7 @@ a.tag:hover {
 }
 
 .blog_content .row {
-    --bs-gutter-x: 35px;
+    --bs-gutter-x: 50px;
 }
 
 .blog_text .overlay {
