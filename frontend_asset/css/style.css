@@ -703,7 +703,7 @@ a.tag:hover {
 .case_study_slider .owl-nav {
     position: absolute;
     top: -30px;
-    right: 30px;
+    right: 13%;
 }
 
 .case_study_slider .owl-nav button {
@@ -737,12 +737,26 @@ a.tag:hover {
     color: #FFF;
 }
 
+/* #done_project .owl-item{
+    transform: scale(.95);
+    filter: blur(2px);
+    transition: all linear .3s;
+}
+
+#done_project .owl-item.active.center {
+    transform: scale(1.04);
+    filter: blur(0px);
+}
+
+#done_project .owl-stage {
+    padding-top: 50px;
+} */
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Technology PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
 #technology {
-    background: var(--sbg_color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -750,47 +764,404 @@ a.tag:hover {
 
 #technology .header {
     margin-right: 75px;
+    text-align: center ;
 }
 
-.technology_item {
-    border: 1px solid var(--bg_color);
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 30px;
+.technology-logos{
+    margin-top: 50px;
+    position: relative;
+    min-height: 1000px;
+    background: var(--sbg_color);
+    overflow: hidden;
+}
+
+.technology-logos:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: url(../images/tech2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.technology-logos span {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
     text-align: center;
-    margin-bottom: 30px;
+    -webkit-box-shadow: 0 49px 20px -14px rgba(0,0,0,.5);
+    box-shadow: 0 49px 20px -14px rgba(0,0,0,.5);
+    background: #fff;
     transition: all linear .3s;
 }
 
-.technology_item.last_child {
-    margin-bottom: 0;
+.technology-logos span:hover{
+    z-index: 99;
 }
 
-.technology_item:hover {
-    transform: translateY(-5px);
-    border: 1px solid var(--bg_color2);
+.technology-logos span .img .overlay {
+    background: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    width: 200px;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+    transition: all linear .3s;
+    box-shadow: 0px 0px 16px rgb(0 0 0 / 28%);
+    opacity: 0;
 }
 
-.technology_item:hover h3 {
-    color: var(--bg_color2);
+.technology-logos span:hover .img .overlay {
+    opacity: 1;
+    top: -130px;
+} 
+
+.technology-logos span .img .overlay::after {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fff;
 }
 
-.technology_item .img img {
-    height: 50px;
+
+.technology-logos span .img .overlay h3{
+    font-size: 18px;
 }
 
-.technology_item .text h3 {
-    margin-top: 20px;
+.technology-logos span .img .overlay p {
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+.technology-logos span::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 90%;
+    width: 90%;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-box-shadow: inset 0 0 16px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 0 16px 2px rgba(0,0,0,.1);
+}
+
+.technology-logos span::after {
+    position: absolute;
+    content: "";
+    height: 200vh;
+    width: 2px;
+    background: #ddd;
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.technology-logos span img {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.technology-logos span:nth-child(1) {
+    right: 64px;
+    top: 285px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+
+.technology-logos span:nth-child(2) {
+    left: 53%;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    top: 80%
+}
+
+.technology-logos span:nth-child(3) {
+    left: 33%;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    top: 66%
+}
+
+.technology-logos span:nth-child(4) {
+    right: 61%;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    top: 39%
+}
+
+.technology-logos span:nth-child(5) {
+    bottom: 23%;
+    right: 30%;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s
+}
+
+.technology-logos span:nth-child(6) {
+    bottom: 175px;
+    left: 110px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s
+}
+
+.technology-logos span:nth-child(7) {
+    bottom: 400px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+.technology-logos span:nth-child(8) {
+    left: 200px;
+    top: 250px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s
+}
+
+.technology-logos span:nth-child(9) {
+    left: 40px;
+    top: 150px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.technology-logos span:nth-child(10) {
+    left: 415px;
+    top: 200px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+.technology-logos span:nth-child(11) {
+    right: 390px;
+    bottom: 45px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.technology-logos span:nth-child(12) {
+    right: 200px;
+    top: 140px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.technology-logos span:nth-child(13) {
+    right: 380px;
+    top: 201px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s
+}
+
+.technology-logos span:nth-child(14) {
+    right: 280px;
+    top: 400px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+.technology-logos span:nth-child(15) {
+    left: 326px;
+    bottom: 323px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s
+}
+
+.technology-logos span:nth-child(16) {
+    left: 342px;
+    bottom: 60px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s
+}
+
+.technology-logos span:nth-child(17) {
+    left: 735px;
+    top: 150px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.technology-logos span:nth-child(18) {
+    right: 560px;
+    top: 150px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.technology-logos span:nth-child(19) {
+    right: 710px;
+    bottom: 520px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+.technology-logos span:nth-child(20) {
+    right: 525px;
+    bottom: 425px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.technology-logos span:nth-child(21) {
+    right: 615px;
+    bottom: 60px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+.technology-logos span:nth-child(22) {
+    left: 650px;
+    top: 200px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+.technology-logos span:nth-child(23) {
+    left: 700px;
+    bottom: 325px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s
+}
+
+.technology-logos span:nth-child(24) {
+    left: 850px;
+    bottom: 185px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+.technology-logos span:nth-child(25) {
+    left: 660px;
+    bottom: 60px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s
+}
+
+.technology-logos span:nth-child(26) {
+    left: 500px;
+    bottom: 190px;
+    -webkit-animation: translate 7s infinite;
+    animation: translate 7s infinite;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s
+}
+
+@-webkit-keyframes translate {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    50% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes translate {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    50% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Done Project PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
-#done_project .case_study_slider .owl-nav {
+/* #done_project .case_study_slider .owl-nav {
     position: absolute;
     top: -30px;
     right: 13%;
-}
+} */
 
 
 
@@ -1108,12 +1479,6 @@ a.tag:hover {
     background: var(--bg_color2);
 }
 
-.we_call_content p.tiny{
-    padding: 50px 0;
-    text-align: center;
-    font-size: 18px;
-}
-
 /* we_call_overlay */
 
 .we_call_overlay {
@@ -1249,18 +1614,43 @@ a.tag:hover {
     START tiny_footer PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
 #tiny_footer {
-    background: #070B3B;
+    background: transparent linear-gradient(0deg, #FFFFFF 0%, #F5F8FD 39%, #E6F1FF 100%) 0% 0% no-repeat padding-box;
     padding: 20px 0;
 }
 
 #tiny_footer p {
     margin-top: 0;
-    font-size: 18px;
     font-weight: 400;
-    color: #FFF;
+    color: var(--header_color);
+    text-align: left;
 }
 
+#tiny_footer ul{
+    text-align: right;
+}
 
+#tiny_footer ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#tiny_footer ul li a{
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    position: relative;
+    color: var(--header_color);
+}
+
+#tiny_footer ul li a::after{
+    position: absolute;
+    content: '';
+    left: -15px;
+    top: 11px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--bg_color2);
+}
 
 
 
