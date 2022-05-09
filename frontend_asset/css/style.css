@@ -166,7 +166,28 @@ a.tag:hover {
 }
 
 
+/* Back To Top */
+.back-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    background: var(--bg_color2);
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 50%;
+    z-index: 99;
+}
 
+.back-to-top:hover{
+    color: #FFF;
+}
+
+.back-to-top i{ 
+    font-size: 20px;
+}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -198,7 +219,7 @@ a.tag:hover {
 }
 
 .navbar .nav-item .nav-link {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 28px;
     color: var(--header_color);
@@ -265,6 +286,31 @@ a.tag:hover {
     margin-bottom: 0;
 }
 
+.bg {
+    background: #FFF;
+    box-shadow: 0 4px 50px rgb(0 0 0 / 10%);
+    animation: menu 1.5s;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+@keyframes menu {
+    from{top:-50px}
+    to {top:0}
+}
+
+.navbar.bg  img {
+    height: 55px;
+}
+
+.navbar.bg .nav-item .nav-link {
+    line-height: 80px;
+    height: 80px;
+}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Banner PART
@@ -1384,6 +1430,95 @@ a.tag:hover {
     line-height: 30px;
 }
 
+/* Blog Page */
+#b_banner{
+    background: url('../images/blog_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+    position: relative;
+}
+
+#b_banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#b_banner h1{
+    position: relative;
+    z-index: 1;
+}
+
+.blog_page .blog_item {
+    margin-bottom: 40px;
+}
+
+.blog_page .blog_item.last_child{
+    margin-bottom: 0;
+}
+
+/* pagination */
+
+.b_pagination{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.b_pagination a {
+    background: var(--bg_color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #FFF;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.b_pagination a.active{
+    background: var(--bg_color2);
+}
+
+.blog_page .blog_content .row {
+    --bs-gutter-x: 30px;
+}
+
+.blog_page .blog_text_item {
+    padding: 40px 20px 20px 0px;
+}
+
+.blog_page .blog_text_item .right .header h5 {
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.blog_page .blog_text_item .right h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.blog_page .blog_text_item .right p {
+    font-size: 14px;
+}
+
+.blog_page .blog_text .overlay {
+    padding: 6px 14px;
+    top: -55px;
+}
+
+.blog_page .blog_text .overlay h6 {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.blog_page .custome_btn {
+    margin-top: 25px;
+}
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START We'll Call You! PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1494,7 +1629,7 @@ a.tag:hover {
     top: -60px;
     left: 50%;
     transform: translateX(-50%);
-    width: 82%;
+    width: 74%;
 }
 
 .we_call_overlay .left{
@@ -1656,6 +1791,8 @@ a.tag:hover {
     border-radius: 50%;
     background: var(--bg_color2);
 }
+
+
 
 
 

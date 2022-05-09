@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="frontend_asset/css/slick.css">
     <link rel="stylesheet" href="frontend_asset/css/style.css">
     <link rel="stylesheet" href="frontend_asset/css/media_new.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -66,7 +67,7 @@
             <ul class="navbar-nav m-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
 
                 <li class="nav-item">
@@ -203,7 +204,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="blog.html">Blog</a>
                 </li>
 
             </ul>
@@ -258,7 +259,7 @@
         <div class="row d_flex">
 
             <!-- Text Part -->
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="zoom-in-left" data-aos-duration="1000">
 
                 <div class="about_content">
 
@@ -311,7 +312,7 @@
             </div>
 
             <!-- Img -->
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="zoom-in-right" data-aos-duration="1000">
 
                 <div class="about_img">
 
@@ -346,7 +347,7 @@
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Service PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
-<section id="service">
+<section id="service" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="2000">
 
     <div class="section_height"></div>
 
@@ -501,7 +502,7 @@
 
         <div class="row d_flex">
 
-            <div class="col-lg-5">
+            <div class="col-lg-5" data-aos="fade-up"data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
 
                 <div class="working_process_img">
                     
@@ -524,7 +525,7 @@
 
             </div>
 
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="fade-down"data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
 
                 <div class="working_process_content">
 
@@ -635,7 +636,7 @@
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START at_a_glance PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
-<section id="at_a_glance">
+<section id="at_a_glance" data-aos="zoom-in" data-aos-duration="2000">
 
     <div class="section_height"></div>
 
@@ -773,7 +774,7 @@
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Case Study PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
-<section id="case_study">
+<section id="case_study" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
 
     <div class="section_height"></div>
 
@@ -1020,7 +1021,7 @@
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Technology PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
-<section id="technology">
+<section id="technology" data-aos="fade-down" data-aos-duration="1000">
 
     <div class="container custome_width">
 
@@ -1636,7 +1637,7 @@
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Our Clients PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
-<section id="our_clients">
+<section id="our_clients" data-aos="fade-up" data-aos-duration="2000">
 
     <div class="section_height"></div>
 
@@ -2029,7 +2030,7 @@
 
             <div class="row">
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500">
 
                     <div class="blog_item">
 
@@ -2092,7 +2093,7 @@
 
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500">
 
                     <div class="blog_item">
 
@@ -2473,6 +2474,11 @@
     
 </footer>
 
+<!-- ========== BACK TO TOP START ========== -->
+<a href="#" class="back-to-top">
+    <i class="fa fa-chevron-up"></i>
+</a>
+
 
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START  PART
@@ -2496,6 +2502,11 @@
     <script src="frontend_asset/js/all.min.js"></script>
     <script src="frontend_asset/js/shop.js"></script>
     <script src="frontend_asset/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
