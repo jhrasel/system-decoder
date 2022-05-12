@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Decoder</title>
+
+    <link rel="icon" href="frontend_asset/images/Logo.png">
+
+    <!-- Google Font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="frontend_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend_asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="frontend_asset/css/all.min.css">
+    <link rel="stylesheet" href="frontend_asset/css/animate.css">
+    <link rel="stylesheet" href="frontend_asset/css/slick.css">
+    <link rel="stylesheet" href="frontend_asset/css/style.css">
+    <link rel="stylesheet" href="frontend_asset/css/media_new.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+<div class="contact_pages">
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Navbar PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container custome_width">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="frontend_asset/images/Logo.png" alt="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav m-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item custome_dropdown">
+                        <a class="nav-link" href="#">Services</a>
+
+                        <div class="nav_drop_content">
+
+                            <div class="row d_flex d_justify">
+
+                                <div class="col-lg-4">
+
+                                    <div class="nav_drop_item">
+
+                                        <a href="" class="d_flex">
+                                            <div class="img">
+                                                <img src="frontend_asset/images/nav-drop/Software Development.png"
+                                                    alt="Software Development">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Software Development</h3>
+                                                <p>Custom Software Development</p>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="nav_drop_item">
+
+                                        <a href="" class="d_flex">
+                                            <div class="img">
+                                                <img src="frontend_asset/images/nav-drop/Security and Compliance.png"
+                                                    alt="Security and Compliance">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Security and Compliance</h3>
+                                                <p>Network Security</p>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="nav_drop_item">
+
+                                        <a href="" class="d_flex">
+                                            <div class="img">
+                                                <img src="frontend_asset/images/nav-drop/Advisory.png"
+                                                    alt="Advisory">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Advisory</h3>
+                                                <p>Digital Transformation</p>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="nav_drop_item last_child">
+
+                                        <a href="" class="d_flex">
+                                            <div class="img">
+                                                <img src="frontend_asset/images/nav-drop/Advanced Tech.png"
+                                                    alt="Advanced Tech">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Advanced Tech</h3>
+                                                <p>Artificial Intelligence</p>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="nav_drop_item last_child">
+
+                                        <a href="" class="d_flex">
+                                            <div class="img">
+                                                <img src="frontend_asset/images/nav-drop/Artificial Intelligence.png"
+                                                    alt="Artificial Intelligence">
+                                            </div>
+                                            <div class="text">
+                                                <h3>Artificial Intelligence</h3>
+                                                <p>Cloud Infrastructure</p>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="nav_drop_item last_child">
+
+                                        <a href="" class="d_flex">
+                                            <div class="img">
+                                                <img src="frontend_asset/images/nav-drop/BI & Analytics.png"
+                                                    alt="BI & Analytics">
+                                            </div>
+                                            <div class="text">
+                                                <h3>BI & Analytics</h3>
+                                                <p>BI Consulting</p>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Technology</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="career.html">Carrer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex contact">
+                    <a href="contact.html" class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+                </form>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Banner PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <section id="b_banner">
+
+        <div class="container custome_width">
+
+            <div class="row">
+
+                <div class="col-lg-6 m-auto">
+                    <h1 class="wh text-center">Contact Us</h1>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Get In Touch PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="get_in_touch">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <!-- Input -->
+            <div class="col-lg-6">
+
+                <div class="get_in_touch_content">
+
+                    <h2>Get in touch</h2>
+                    <p>Tell us about your project and get connected with a TAA Expert today!</p>
+
+                    <div class="form_part">
+
+                        <form action="" method="">
+
+                            <div class="row">
+
+                                <!-- Name -->
+                                <div class="col-lg-6">
+
+                                    <div class="custome_input">
+
+                                        <label>Name</label>
+                                        <input type="text" placeholder="Full Name">
+        
+                                    </div>
+
+                                </div>
+
+                                <!-- Mobile -->
+                                <div class="col-lg-6">
+
+                                    <div class="custome_input">
+
+                                        <label>Mobile</label>
+                                        <input type="text" placeholder="162 2625 252">
+        
+                                    </div>
+
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-lg-12">
+
+                                    <div class="custome_input">
+
+                                        <label>Email</label>
+                                        <input type="text" placeholder="Email Address">
+        
+                                    </div>
+
+                                </div>
+
+                                <!-- Organisation -->
+                                <div class="col-lg-6">
+
+                                    <div class="custome_input">
+
+                                        <label>Organisation</label>
+                                        <input type="text" placeholder="Your company name">
+        
+                                    </div>
+
+                                </div>
+
+                                <!-- Position -->
+                                <div class="col-lg-6">
+
+                                    <div class="custome_input">
+
+                                        <label>Position</label>
+                                        <input type="text" placeholder="Your position">
+        
+                                    </div>
+
+                                </div>
+
+                                <!-- Massage -->
+                                <div class="col-lg-12">
+
+                                    <div class="custome_input">
+
+                                        <label>Massage</label>
+                                        <textarea name="" rows="3" placeholder="Tell us everything"></textarea>
+        
+                                    </div>
+
+                                </div>
+
+                                <!-- Attach files -->
+                                <div class="col-lg-12">
+
+                                    <div class="custome_input">
+
+                                        <label>Attach</label>
+                                        <div class="attach_file">
+                                            <input type="file">
+                                            <p>Click to upload your files or drop</p>
+                                        </div>
+        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Address -->
+            <div class="col-lg-6">
+
+                <div class="get_in_touch_content right">
+
+                    <div class="row">
+
+                        <!-- Address -->
+                        <div class="col-lg-6">
+
+                            <div class="office_address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>Office Address</h3>
+                                <p>House# 1047, Road# 45, Mirpur DOHS, Dhaka-1216, Bangladesh. </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="con-lg-6 mb-4">
+
+                            <div class="office_address">
+                                <i class="fas fa-envelope"></i>
+                                <h3>Email</h3>
+                                <a href="mailto:contact@systemdecoder.com">contact@systemdecoder.com</a>
+                            </div>
+
+                        </div>
+
+                        <!-- Get Free Consultency -->
+                        <div class="col-lg-12">
+
+                            <div class="free_Consultency d_flex d_justify">
+                                
+                                <div class="left">
+                                    <h3>Get Free Consultency</h3>
+                                    <p>Scheduling an Appointment for Consultency</p>
+                                </div>
+
+                                <div class="right">
+                                    <a href="">Schedule</a>
+                                </div>
+
+                            </div>
+
+                            <div class="free_Consultency bgc d_flex d_justify">
+                                
+                                <div class="left">
+                                    <h3 class="wh">Get Free Consultency</h3>
+                                    <p class="wh">Scheduling an Appointment for Consultency</p>
+                                </div>
+
+                                <div class="right">
+                                    <a href="" class="wh">Schedule</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Maps -->
+        <div class="maps">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="maps_part">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.7928798665303!2d90.36574961536363!3d23.82596309180154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1b7b1a39a07%3A0xd4d74a16842b45d0!2sSystem%20Decoder!5e0!3m2!1sen!2sbd!4v1652351265428!5m2!1sen!2sbd" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START ABOUT US PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START ABOUT US PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START We'll Call You! PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+    <section id="we_call">
+
+        <div class="container">
+
+            <!-- we_call_overlay -->
+            <div class="we_call_overlay d_flex d_justify">
+                
+                <!-- Left -->
+                <div class="left">
+                    <h2 class="wh">We'll Call You!</h2>
+                    <p class="wh">Get answers to your questions about lessons, apps and platform instantly!</p>
+                </div>
+        
+                <!-- right -->
+                <div class="right">
+                    <div class="custome_input d_flex">
+                        <input type="text" placeholder="Name" class="form-control">
+                        <input type="text" placeholder="Phone Number" class="form-control">
+                    </div>
+                    <div class="right_arrow d_flex">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </div>
+                </div>
+                
+        
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="we_call_content">
+
+                        <!-- Header Part -->
+                        <div class="header d_flex d_justify">
+
+                            <div class="left d_flex">
+
+                                <div class="text">
+                                    <h2>CUSTOMER SERVICE</h2>
+                                    <h3>+880 1751 414 572</h3>
+                                </div>
+        
+                                <div class="img">
+                                    <img src="frontend_asset/images/headset.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <div class="left right d_flex">
+
+                                <div class="img">
+                                    <img src="frontend_asset/images/whatsapp.png" alt="">
+                                </div>
+
+                                <div class="text">
+                                    <h2>WHATS APP HELP</h2>
+                                    <h3>+880 1751 414 572</h3>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Talk Or Mail us -->
+                        <div class="we_call_talk d_flex">
+
+                            <!-- Left -->
+                            <div class="left">
+
+                                <h3>Talk <span>Or</span> Mail us</h3>
+                                <div class="">
+                                    <a href="tel:01751414572"> <i class="fas fa-phone-alt"></i> +880 1751 414 572</a>
+                                </div>
+                                
+                                <div class="">
+                                    <a href="mailto:"> <i class="fas fa-envelope"></i> contact@systemdecoder.com</a>
+                                </div>
+
+                                <div class="we_call_talk_img">
+                                    <img src="frontend_asset/images/basisfooter.png" alt="">
+                                </div>
+
+                            </div>
+
+                            <!-- Right -->
+                            <div class="left">
+
+                                <h3>Visit Office</h3>
+                                <div class="">
+                                    <a href="tel:01751414572"> <i class="fas fa-map-marker-alt"></i> House#28, Road#9, Block#C, Section#12, Pallabi, Dhaka-1216, Bangladesh</a>
+                                </div>
+                                
+                                <div class="social_part">
+
+                                    <h3>Our Social Conection</h3>
+
+                                    <div class="socila_icon d_flex">
+
+                                        <a href="" class="d_flex">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                
+                                        <a href="" class="d_flex">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                
+                                        <a href="" class="d_flex">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                
+                                        <a href="" class="d_flex">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                
+                                    </div>
+
+                                </div>
+                                
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Footer PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+    <footer id="tiny_footer" class="text-center">
+
+        <div class="container custome_width">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <p class="tiny">© 2021 System Decoder | All Rights Reserved.</p>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <ul>
+
+                        <li><a href="">Privacy Policy</a></li>
+
+                        <li><a href="">Terms and Conditions</a></li>
+
+                        <li><a href="">Cookie</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ========== BACK TO TOP START ========== -->
+    <a href="#" class="back-to-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+
+
+</div>
+
+
+
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+
+    <!-- <div class="p-4">
+    <a href="" class="custome_btn">
+        Draw Border
+    </a>
+</div> -->
+
+
+
+    <!-- JS Link -->
+    <script src="frontend_asset/js/jquery-1.12.4.min.js"></script>
+    <script src="frontend_asset/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend_asset/js/owl.carousel.min.js"></script>
+    <script src="frontend_asset/js/jquery.elevatezoom.js"></script>
+    <script src="frontend_asset/js/slick.js"></script>
+    <script src="frontend_asset/js/all.min.js"></script>
+    <script src="frontend_asset/js/shop.js"></script>
+    <script src="frontend_asset/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

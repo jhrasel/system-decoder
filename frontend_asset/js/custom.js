@@ -1,6 +1,15 @@
 $(function() {
 
-     //    ================= BACK TO TOP PART ============
+
+    // Preloader
+
+    
+    $(window).on('load',function(){
+        $('.preloader').delay(100).fadeOut(100);
+    });  
+
+
+    //    ================= BACK TO TOP PART ============
 
      $('.back-to-top').click(function(){
         $('html, body').animate({scrollTop:0}, 100);
@@ -20,7 +29,7 @@ $(function() {
 	
 //    ================= ADD CLASS STICKY MENU PART ============
 
-        if (scrolling > 250) {
+        if (scrolling > 300) {
             $('.navbar').addClass('bg');
         } else {
             $('.navbar').removeClass('bg'); 
@@ -68,7 +77,7 @@ $(function() {
                 loop:false
             }
         }
-    })
+    });
 
     // case_slider
     $('.owl-carousel.case_slider').owlCarousel({
@@ -93,7 +102,33 @@ $(function() {
                 nav:true,
             }
         }
-    })
+    });
+
+    // blog Slider
+    $('.owl-carousel.blog_slider').owlCarousel({
+        loop:true,
+        margin:30,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+            }
+        }
+    });
+
+
 
 
     // done_project_slider
