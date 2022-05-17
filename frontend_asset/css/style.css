@@ -364,7 +364,8 @@ textarea{
 }
 
 .navbar .navbar-brand img {
-    height: 70px;
+    /* height: 70px; */
+    width: 90%;
 }
 
 .navbar .nav-item {
@@ -457,7 +458,8 @@ textarea{
 }
 
 .navbar.bg  img {
-    height: 55px;
+    /* height: 55px; */
+    width: 80%;
 }
 
 .navbar.bg .nav-item .nav-link {

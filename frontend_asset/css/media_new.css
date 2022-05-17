@@ -1,0 +1,29 @@
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+    a {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .navbar .nav-item .nav-link {
+        font-size: 15px;
+    }
+
+
+}
