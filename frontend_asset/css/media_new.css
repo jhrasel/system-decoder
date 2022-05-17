@@ -24,6 +24,48 @@
     .navbar .nav-item .nav-link {
         font-size: 15px;
     }
+    .experience_support .img img {
+        height: 65px;
+    }
+    .experience_support {
+        margin-top: 30px;
+    }
+    .service_item .img img {
+        height: 150px;
+        width: 85%;
+    }
+    .service_item .img img {
+        width: 60%;
+    }
+    .technology-logos span {
+        height: 120px;
+        width: 120px;
+    }
+    .technology-logos span img {
+        width: 50%;
+    }
+    .our_clients_slider_item .profile_part .profile_img img {
+        width: 60px;
+        height: 60px;
+    }
+    .blog_page .blog_content .row {
+        --bs-gutter-x: 22px;
+    }
+    .blog_page .blog_text_item {
+        padding: 40px 15px 15px 0px;
+    }
+    .blog_text_item .left {
+        margin-right: 20px;
+    }
+    .blog_page .blog_text_item .right .header h5 {
+        font-size: 14px;
+    }
+    .blog_page .blog_text_item .right p {
+        font-size: 13px;
+    }
+    .blog_page .blog_text_item .right h3 {
+        font-size: 15px;
+    }
 
 
 }
