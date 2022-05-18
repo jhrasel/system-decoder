@@ -347,6 +347,10 @@ textarea{
     START navbar PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.Mobile_menu{
+    display: none;
+}
+
 .navbar {
     height: 90px;
     padding: 0;
@@ -582,6 +586,10 @@ textarea{
 .about_us_pages .project_compelete h4{
     color: var(--text_color);
     margin-top: 5px;
+}
+
+section#about_usP .header {
+    margin-left: 50px;
 }
 
 /* Meet Our Team */
@@ -1741,12 +1749,12 @@ textarea{
 }
 
 /* Blog Page */
-#b_banner{
+#b_banner {
     background: url('../images/blog_bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 150px;
+    padding: 150px 0;
     position: relative;
 }
 
@@ -2483,12 +2491,11 @@ section#get_in_touch {
     position: relative;
 }
 
-.career_details_item ul li::after{
+.career_details_item ul li::after {
     position: absolute;
     content: '';
-    left:-40px ;
-    top: 50%;
-    transform: translateY(-50%);
+    left: -40px;
+    top: 13px;
     width: 20px;
     height: 1px;
     background: var(--bg_color2);

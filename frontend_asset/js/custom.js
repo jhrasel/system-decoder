@@ -67,11 +67,12 @@ $(function() {
                 items:1,
                 nav:true
             },
-            600:{
-                items:2,
-                nav:false
-            },
             1000:{
+                items:1,
+                nav:true,
+                loop:false
+            },
+            1200:{
                 items:2,
                 nav:true,
                 loop:false
@@ -90,14 +91,18 @@ $(function() {
         responsiveClass:true,
         responsive:{
             0:{
-                items:1,
+                items:1.1,
                 nav:true
             },
             600:{
-                items:3,
+                items:2,
                 nav:false
             },
             1000:{
+                items:2.5,
+                nav:true,
+            },
+            1200:{
                 items:4,
                 nav:true,
             }
@@ -129,31 +134,6 @@ $(function() {
     });
 
 
-
-
-    // done_project_slider
-    // $('.done_project_slider').owlCarousel({
-    //     loop:true,
-    //     margin:30,
-    //     autoplay:false,
-    //     autoplayTimeout:3000,
-    //     autoplayHoverPause:true,
-    //     center: true,
-    //     responsiveClass:true,
-    //     responsive:{
-    //         0:{
-    //             items:1,
-    //         },
-    //         600:{
-    //             items:2,
-    //         },
-    //         1000:{
-    //             items:3,
-    //             nav:true,
-    //         }
-    //     }
-    // });
-
     // our_clients_slider
     $('.owl-carousel.our_clients_slider_part').owlCarousel({
         loop:true,
@@ -171,6 +151,9 @@ $(function() {
                 items:2
             },
             1000:{
+                items:2
+            },
+            1200:{
                 items:3
             }
         }

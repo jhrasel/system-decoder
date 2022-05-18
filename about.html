@@ -10,21 +10,11 @@
     <link rel="icon" href="frontend_asset/images/Logo.png">
 
     <!-- Google Font -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +27,8 @@
     <link rel="stylesheet" href="frontend_asset/css/animate.css">
     <link rel="stylesheet" href="frontend_asset/css/slick.css">
     <link rel="stylesheet" href="frontend_asset/css/style.css">
-    <link rel="stylesheet" href="frontend_asset/css/media_new.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="frontend_asset/css/media.css">
 
 </head>
 
@@ -58,150 +48,312 @@
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Navbar PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
-    <nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg">
 
-        <div class="container custome_width">
+    <div class="container custome_width">
 
-            <a class="navbar-brand" href="index.html">
-                <img src="frontend_asset/images/Logo.png" alt="logo">
-            </a>
+        <a class="navbar-brand" href="index.html">
+            <img src="frontend_asset/images/Logo.png" alt="logo">
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        <!-- Mobile Start -->
+        
+        <div class="Mobile_menu">
+
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <img src="frontend_asset/images/menu_bars.png" alt="">
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav m-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-
-                    <li class="nav-item custome_dropdown">
-                        <a class="nav-link" href="#">Services</a>
-
-                        <div class="nav_drop_content">
-
-                            <div class="row d_flex d_justify">
-
-                                <div class="col-lg-4">
-
-                                    <div class="nav_drop_item">
-
-                                        <a href="" class="d_flex">
-                                            <div class="img">
-                                                <img src="frontend_asset/images/nav-drop/Software Development.png"
-                                                    alt="Software Development">
-                                            </div>
-                                            <div class="text">
-                                                <h3>Software Development</h3>
-                                                <p>Custom Software Development</p>
-                                            </div>
-                                        </a>
-
+              
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    
+                <div class="offcanvas-header">
+                  <h2>Menubars</h2>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+    
+                <div class="offcanvas-body">
+    
+                    <ul class="navbar-nav m-auto">
+    
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+        
+                        <li class="nav-item custome_dropdown">
+                            <a class="nav-link" href="#">Services</a>
+        
+                            <div class="nav_drop_content">
+        
+                                <div class="row d_flex d_justify">
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Software Development.png" alt="Software Development">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Software Development</h3>
+                                                    <p>Custom Software Development</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
                                     </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Security and Compliance.png" alt="Security and Compliance">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Security and Compliance</h3>
+                                                    <p>Network Security</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Advisory.png" alt="Advisory">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Advisory</h3>
+                                                    <p>Digital Transformation</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item last_child">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Advanced Tech.png" alt="Advanced Tech">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Advanced Tech</h3>
+                                                    <p>Artificial Intelligence</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item last_child">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Artificial Intelligence.png" alt="Artificial Intelligence">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Artificial Intelligence</h3>
+                                                    <p>Cloud Infrastructure</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item last_child">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/BI & Analytics.png" alt="BI & Analytics">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>BI & Analytics</h3>
+                                                    <p>BI Consulting</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Technology</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Carrer</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+    
+                    </ul>
+    
+                    <form class="d-flex contact">
+                        <a href="contact.html" class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+                    </form>
+    
+                </div>
+    
+            </div>
+
+        </div>
+        
+        <!-- Mobile End -->
+        
+        
+
+        <div class="collapse navbar-collapse desktop" id="navbarSupportedContent">
+
+            <ul class="navbar-nav m-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item custome_dropdown">
+                    <a class="nav-link" href="#">Services</a>
+
+                    <div class="nav_drop_content">
+
+                        <div class="row d_flex d_justify">
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Software Development.png" alt="Software Development">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Software Development</h3>
+                                            <p>Custom Software Development</p>
+                                        </div>
+                                    </a>
 
                                 </div>
 
-                                <div class="col-lg-4">
+                            </div>
 
-                                    <div class="nav_drop_item">
+                            <div class="col-lg-4">
 
-                                        <a href="" class="d_flex">
-                                            <div class="img">
-                                                <img src="frontend_asset/images/nav-drop/Security and Compliance.png"
-                                                    alt="Security and Compliance">
-                                            </div>
-                                            <div class="text">
-                                                <h3>Security and Compliance</h3>
-                                                <p>Network Security</p>
-                                            </div>
-                                        </a>
+                                <div class="nav_drop_item">
 
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-4">
-
-                                    <div class="nav_drop_item">
-
-                                        <a href="" class="d_flex">
-                                            <div class="img">
-                                                <img src="frontend_asset/images/nav-drop/Advisory.png"
-                                                    alt="Advisory">
-                                            </div>
-                                            <div class="text">
-                                                <h3>Advisory</h3>
-                                                <p>Digital Transformation</p>
-                                            </div>
-                                        </a>
-
-                                    </div>
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Security and Compliance.png" alt="Security and Compliance">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Security and Compliance</h3>
+                                            <p>Network Security</p>
+                                        </div>
+                                    </a>
 
                                 </div>
 
-                                <div class="col-lg-4">
+                            </div>
 
-                                    <div class="nav_drop_item last_child">
+                            <div class="col-lg-4">
 
-                                        <a href="" class="d_flex">
-                                            <div class="img">
-                                                <img src="frontend_asset/images/nav-drop/Advanced Tech.png"
-                                                    alt="Advanced Tech">
-                                            </div>
-                                            <div class="text">
-                                                <h3>Advanced Tech</h3>
-                                                <p>Artificial Intelligence</p>
-                                            </div>
-                                        </a>
+                                <div class="nav_drop_item">
 
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-4">
-
-                                    <div class="nav_drop_item last_child">
-
-                                        <a href="" class="d_flex">
-                                            <div class="img">
-                                                <img src="frontend_asset/images/nav-drop/Artificial Intelligence.png"
-                                                    alt="Artificial Intelligence">
-                                            </div>
-                                            <div class="text">
-                                                <h3>Artificial Intelligence</h3>
-                                                <p>Cloud Infrastructure</p>
-                                            </div>
-                                        </a>
-
-                                    </div>
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Advisory.png" alt="Advisory">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Advisory</h3>
+                                            <p>Digital Transformation</p>
+                                        </div>
+                                    </a>
 
                                 </div>
 
-                                <div class="col-lg-4">
+                            </div>
 
-                                    <div class="nav_drop_item last_child">
+                            <div class="col-lg-4">
 
-                                        <a href="" class="d_flex">
-                                            <div class="img">
-                                                <img src="frontend_asset/images/nav-drop/BI & Analytics.png"
-                                                    alt="BI & Analytics">
-                                            </div>
-                                            <div class="text">
-                                                <h3>BI & Analytics</h3>
-                                                <p>BI Consulting</p>
-                                            </div>
-                                        </a>
+                                <div class="nav_drop_item last_child">
 
-                                    </div>
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Advanced Tech.png" alt="Advanced Tech">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Advanced Tech</h3>
+                                            <p>Artificial Intelligence</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Artificial Intelligence.png" alt="Artificial Intelligence">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Artificial Intelligence</h3>
+                                            <p>Cloud Infrastructure</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/BI & Analytics.png" alt="BI & Analytics">
+                                        </div>
+                                        <div class="text">
+                                            <h3>BI & Analytics</h3>
+                                            <p>BI Consulting</p>
+                                        </div>
+                                    </a>
 
                                 </div>
 
@@ -209,30 +361,32 @@
 
                         </div>
 
-                    </li>
+                    </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Technology</a>
-                    </li>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="career.html">Carrer</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Technology</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="career.html">Carrer</a>
+                </li>
 
-                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
 
-                <form class="d-flex contact">
-                    <a href="contact.html" class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
-                </form>
+            </ul>
 
-            </div>
+            <form class="d-flex contact">
+                <a href="contact.html" class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+            </form>
+
         </div>
+    </div>
 
-    </nav>
+</nav>
 
 
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -344,7 +498,7 @@
             <div class="row">
 
                 <!-- Item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
     
                     <div class="meet_our_team_item box_shadow">
         
@@ -384,7 +538,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
     
                     <div class="meet_our_team_item box_shadow">
         
@@ -424,7 +578,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
     
                     <div class="meet_our_team_item box_shadow">
         
@@ -464,7 +618,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
     
                     <div class="meet_our_team_item box_shadow">
         
@@ -546,7 +700,7 @@
             <div class="row">
 
                 <!-- Item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
     
                     <div class="care_feature_item">
 
@@ -564,7 +718,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
     
                     <div class="care_feature_item bg2">
 
@@ -582,7 +736,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
     
                     <div class="care_feature_item bg3">
 
@@ -600,7 +754,7 @@
                 </div>
 
                 <!-- Item -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
     
                     <div class="care_feature_item bg4">
 
@@ -771,35 +925,35 @@
     START Footer PART
 ---------------------------------------------------------------------------------------------------------------------------------------------------  -->
 
-    <footer id="tiny_footer" class="text-center">
+<footer id="tiny_footer" class="text-center">
 
-        <div class="container custome_width">
+    <div class="container custome_width">
 
-            <div class="row">
+        <div class="row">
 
-                <div class="col-lg-6">
-                    <p class="tiny">© 2021 System Decoder | All Rights Reserved.</p>
-                </div>
+            <div class="col-lg-6 col-sm-6">
+                <p class="tiny">© 2021 System Decoder | All Rights Reserved.</p>
+            </div>
 
-                <div class="col-lg-6">
+            <div class="col-lg-6 col-sm-6">
 
-                    <ul>
+                <ul>
 
-                        <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Privacy Policy</a></li>
 
-                        <li><a href="">Terms and Conditions</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
 
-                        <li><a href="">Cookie</a></li>
+                    <li><a href="">Cookie</a></li>
 
-                    </ul>
-
-                </div>
+                </ul>
 
             </div>
 
         </div>
 
-    </footer>
+    </div>
+    
+</footer>
 
     <!-- ========== BACK TO TOP START ========== -->
     <a href="#" class="back-to-top">
