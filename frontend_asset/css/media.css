@@ -78,7 +78,10 @@
 
 
 /* // XX-Large devices (larger desktops, 1024px and up) */
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
+    .custome_width {
+        padding: 0 30px;
+    }
     h2 {
         font-size: 26px;
         line-height: 35px;
@@ -214,6 +217,7 @@
     }
     .care_feature_content .care_feature_item {
         padding: 20px 15px;
+        min-height: 290px;
     }
     .care_feature_content .care_feature_item .img {
         width: 75px;
@@ -224,6 +228,97 @@
     }
     .career_item  .Negotiable {
         top: 10px;
+    }
+    .blog_text_item .left {
+        margin-right: 10px;
+        width: 15%;
+    }
+    .blog_text {
+        min-height: 375px;
+    }
+
+
+    .Mobile_menu{
+        display: block;
+    }
+    .Mobile_menu button.btn img {
+        height: 50px;
+    }
+    .Mobile_menu button.btn{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-expand-lg .navbar-collapse.desktop{
+        display: none !important;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar .navbar-brand img {
+        height: 60px;
+        width: 100%;
+    }
+    .working_process_content {
+        margin-top: 30px;
+    }
+    .about_img {
+        margin-top: 30px;
+    }
+    .about_img img{
+        width: 100%;
+    }
+    .navbar .nav-item {
+        margin: 0;
+    }
+    .navbar .nav-item .nav-link {
+        line-height: 40px;
+        height: initial;
+    }
+    .navbar .custome_btn{
+        margin-top: 20px;
+    }
+    .navbar.bg .nav-item .nav-link {
+        line-height: 40px;
+        height: inherit;
+    }
+    .we_call_overlay {
+        padding: 40px 20px;
+        width: 90%;
+        top: -85px;
+    }
+    .we_call_overlay .custome_input input{
+        font-size: 14px;
+    }
+    .we_call_overlay .custome_input input::placeholder{
+        font-size: 14px;
+    }
+    .we_call_overlay .custome_input {
+        padding: 6px 10px;
+    }
+    .we_call_overlay .right_arrow {
+        width: 35px;
+        height: 35px;
+    }
+    .right_arrow svg {
+        font-size: 20px;
+    }
+    .we_call_content .text h2{
+        font-size: 22px;
+    }
+    .we_call_content .text h3 {
+        font-size: 20px;
+    }
+    .maps {
+        margin-bottom: 50px;
+    }
+    #we_call {
+        padding-top: 170px;
+    }
+    #meet_our_team .meet_our_team_item {
+        margin-bottom: 30px;
+    }
+    .care_feature_content .care_feature_item {
+        margin-bottom: 30px;
     }
 
 
@@ -293,27 +388,6 @@
     .at_a_glance_item .text {
         padding: 20px 0px;
     }
-    .we_call_overlay {
-        padding: 40px 20px;
-        width: 90%;
-        top: -85px;
-    }
-    .we_call_overlay .custome_input input{
-        font-size: 14px;
-    }
-    .we_call_overlay .custome_input input::placeholder{
-        font-size: 14px;
-    }
-    .we_call_overlay .custome_input {
-        padding: 6px 10px;
-    }
-    .we_call_overlay .right_arrow {
-        width: 35px;
-        height: 35px;
-    }
-    .right_arrow svg {
-        font-size: 20px;
-    }
     .back-to-top {
         bottom: 20px;
         right: 15px;
@@ -327,12 +401,6 @@
     section#about_usP .header {
         margin-left: 0;
         margin-top: 50px;
-    }
-    #meet_our_team .meet_our_team_item {
-        margin-bottom: 30px;
-    }
-    .care_feature_content .care_feature_item {
-        margin-bottom: 30px;
     }
     #we_call {
         padding-top: 160px;
@@ -350,24 +418,19 @@
     .blog_text {
         min-height: 410px;
     }
-
-    .Mobile_menu{
-        display: block;
+    .blog_text {
+        min-height: 412px;
     }
-    .Mobile_menu button.btn img {
-        height: 50px;
+    .blog_page .blog_text {
+        min-height: 375px;
     }
-    .Mobile_menu button.btn{
-        margin: 0;
-        padding: 0;
+    .care_feature_content .care_feature_item {
+        min-height: auto;
     }
-    .desktop{
-        display: none;
+    #we_call .container {
+        max-width: 768px;
     }
-    .navbar .navbar-brand img {
-        height: 60px;
-        width: 100%;
-    }
+    
 
 }
 
@@ -546,16 +609,7 @@
         text-align: center;
         margin-top: 20px;
     }
-    .navbar .nav-item {
-        margin: 0;
-    }
-    .navbar .nav-item .nav-link {
-        line-height: 40px;
-        height: initial;
-    }
-    .navbar .custome_btn{
-        margin-top: 20px;
-    }
+    
     .Mobile_menu .offcanvas-body {
         padding: 20px 30px;
     }
@@ -598,10 +652,6 @@
     .career_item {
         margin-bottom: -20px;
     }
-    .navbar.bg .nav-item .nav-link {
-        line-height: 40px;
-        height: inherit;
-    }
     .career_details_right {
         margin-left: 0;
         margin-top: 50px;
@@ -623,6 +673,12 @@
     .single_right {
         margin-left: 0;
         margin-bottom: 30px;
+    }
+    .blog_text {
+        min-height: 380px;
+    }
+    .blog_page .blog_text {
+        min-height: 330px;
     }
 
 
