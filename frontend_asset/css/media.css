@@ -100,7 +100,7 @@
         margin: auto;
     }
     .service_item::before {
-        width: 98%;
+        width: 88%;
     }
     .service_content .owl-nav {
         position: absolute;
@@ -110,8 +110,18 @@
     .working_process_img {
         margin-right: 10px;
     }
+    .working_process_img .img img.img-fluid.w-100 {
+        height: 300px;
+        object-fit: fill;
+    }
     .working_process_img .img .working_overlay {
         padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .working_process_img .img .working_overlay h2 {
+        max-width: 425px;
+        margin: auto;
     }
     .working_process_content .working_process_item img {
         height: 50px;
@@ -233,8 +243,11 @@
         margin-right: 10px;
         width: 15%;
     }
-    .blog_text {
+    .blog_page .blog_text {
         min-height: 375px;
+    }
+    .single_blog_page .blog_text {
+        min-height: 285px;
     }
 
 
@@ -319,6 +332,18 @@
     }
     .care_feature_content .care_feature_item {
         margin-bottom: 30px;
+    }
+    .blog_item {
+        margin-bottom: 30px;
+    }
+    .we_call_talk .social_part .socila_icon a {
+        line-height: 30px;
+    }
+    .owl-dots {
+        margin-top: 30px;
+    }
+    .at_a_glance_item {
+        margin-top: 30px;
     }
 
 
@@ -415,27 +440,30 @@
     #we_call {
         margin-top: 86px;
     }
-    .blog_text {
-        min-height: 410px;
-    }
-    .blog_text {
-        min-height: 412px;
-    }
-    .blog_page .blog_text {
-        min-height: 375px;
-    }
     .care_feature_content .care_feature_item {
         min-height: auto;
     }
     #we_call .container {
         max-width: 768px;
     }
-    
+    .technology-logos span:nth-child(16) {
+        left: 430px;
+    }
+    .maps_part {
+        margin-bottom: 50px;
+    }
+    #get_in_touch .custome_input .attach_file p {
+        width: 100%;
+        text-align: center;
+    }
+    #get_in_touch .custome_input button {
+        padding: 10px 20px;
+    }
 
 }
 
 /* // XX-Large devices (larger desktops, 1024px and up) */
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     .service_item {
         display: block;
     }
@@ -674,11 +702,14 @@
         margin-left: 0;
         margin-bottom: 30px;
     }
-    .blog_text {
-        min-height: 380px;
-    }
     .blog_page .blog_text {
         min-height: 330px;
+    }
+    #tiny_footer p {
+        text-align: center;
+    }
+    .free_Consultency {
+        padding: 20px;
     }
 
 

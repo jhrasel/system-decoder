@@ -58,23 +58,22 @@ $(function() {
         // loop:true,
         margin:30,
         autoPlay: true,
-        autoplay:true,
+        slideBy:2,
+        dots:true,
+        navs:false,
         autoplayTimeout:5000,
         autoplayHoverPause:true,
         responsiveClass:true,
         responsive:{
             0:{
                 items:1,
-                nav:true
             },
             1000:{
                 items:1,
-                nav:true,
                 loop:false
             },
             1200:{
                 items:2,
-                nav:true,
                 loop:false
             }
         }
@@ -85,6 +84,9 @@ $(function() {
         loop:true,
         margin:30,
         autoplay:false,
+        dots:true,
+        navs:false,
+        slideBy:2,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
         center: true,
@@ -92,19 +94,15 @@ $(function() {
         responsive:{
             0:{
                 items:1.1,
-                nav:true
             },
             600:{
                 items:2,
-                nav:false
             },
             1000:{
                 items:2.5,
-                nav:true,
             },
             1200:{
                 items:4,
-                nav:true,
             }
         }
     });
@@ -113,6 +111,8 @@ $(function() {
     $('.owl-carousel.blog_slider').owlCarousel({
         loop:true,
         margin:30,
+        dots:true,
+        navs:false,
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
@@ -120,15 +120,12 @@ $(function() {
         responsive:{
             0:{
                 items:1,
-                nav:true
-            },
-            600:{
-                items:2,
-                nav:false
             },
             1000:{
+                items:2,
+            },
+            1100:{
                 items:3,
-                nav:true,
             }
         }
     });
@@ -139,10 +136,11 @@ $(function() {
         loop:true,
         margin:30,
         autoplay:true,
+        dots:true,
+        navs:false,
         autoplayTimeout:3000,
         autoplayHoverPause:true,
         responsiveClass:true,
-        nav:true,
         responsive:{
             0:{
                 items:1
