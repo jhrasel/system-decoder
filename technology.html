@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Decoder</title>
+
+    <link rel="icon" href="frontend_asset/images/Logo.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="frontend_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend_asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="frontend_asset/css/all.min.css">
+    <link rel="stylesheet" href="frontend_asset/css/animate.css">
+    <link rel="stylesheet" href="frontend_asset/css/slick.css">
+    <link rel="stylesheet" href="frontend_asset/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="frontend_asset/css/media.css">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Navbar PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container custome_width">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="frontend_asset/images/Logo.png" alt="logo">
+        </a>
+
+        <!-- Mobile Start -->
+        
+        <div class="Mobile_menu">
+
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <img src="frontend_asset/images/menu_bars.png" alt="">
+            </button>
+              
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    
+                <div class="offcanvas-header">
+                  <h2>Menubars</h2>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+    
+                <div class="offcanvas-body">
+    
+                    <ul class="navbar-nav m-auto">
+    
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+        
+                        <li class="nav-item custome_dropdown">
+                            <a class="nav-link" href="#">Services</a>
+        
+                            <div class="nav_drop_content">
+        
+                                <div class="row d_flex d_justify">
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Software Development.png" alt="Software Development">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Software Development</h3>
+                                                    <p>Custom Software Development</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Security and Compliance.png" alt="Security and Compliance">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Security and Compliance</h3>
+                                                    <p>Network Security</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Advisory.png" alt="Advisory">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Advisory</h3>
+                                                    <p>Digital Transformation</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item last_child">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Advanced Tech.png" alt="Advanced Tech">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Advanced Tech</h3>
+                                                    <p>Artificial Intelligence</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item last_child">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Artificial Intelligence.png" alt="Artificial Intelligence">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Artificial Intelligence</h3>
+                                                    <p>Cloud Infrastructure</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item last_child">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/BI & Analytics.png" alt="BI & Analytics">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>BI & Analytics</h3>
+                                                    <p>BI Consulting</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="technology.html">Technology</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Carrer</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+    
+                    </ul>
+    
+                    <form class="d-flex contact">
+                        <a href="contact.html" class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+                    </form>
+    
+                </div>
+    
+            </div>
+
+        </div>
+        
+        <!-- Mobile End -->
+        
+        
+
+        <div class="collapse navbar-collapse desktop" id="navbarSupportedContent">
+
+            <ul class="navbar-nav m-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item custome_dropdown">
+                    <a class="nav-link" href="#">Services</a>
+
+                    <div class="nav_drop_content">
+
+                        <div class="row d_flex d_justify">
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Software Development.png" alt="Software Development">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Software Development</h3>
+                                            <p>Custom Software Development</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Security and Compliance.png" alt="Security and Compliance">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Security and Compliance</h3>
+                                            <p>Network Security</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Advisory.png" alt="Advisory">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Advisory</h3>
+                                            <p>Digital Transformation</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Advanced Tech.png" alt="Advanced Tech">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Advanced Tech</h3>
+                                            <p>Artificial Intelligence</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Artificial Intelligence.png" alt="Artificial Intelligence">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Artificial Intelligence</h3>
+                                            <p>Cloud Infrastructure</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/BI & Analytics.png" alt="BI & Analytics">
+                                        </div>
+                                        <div class="text">
+                                            <h3>BI & Analytics</h3>
+                                            <p>BI Consulting</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="technology.html">Technology</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="career.html">Carrer</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+
+            </ul>
+
+            <form class="d-flex contact">
+                <a href="contact.html" class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+            </form>
+
+        </div>
+    </div>
+
+</nav>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Banner PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="banner">
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="banner_content">
+
+                    <h1>We Provide Best IT Services for Your Need</h1>
+                    <p class="wh">Aenean Sollicitudin, Lorem quis Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+
+                    <a class="custome_btn btn-12"><span>Click!</span><span>Read More</span></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Backend PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="technologyPages">
+
+    <div class="container">
+
+        <!-- header Part -->
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+
+                    <h2>Backend</h2>
+                    <p>For your application’s backend, Doodle Inc. has the team of Geniuses can play the role of utilizing many powerful coding tools. With the Touch of strength and security control your business; easily and effectively.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content  -->
+        <div class="technologyPages_content">
+
+            <div class="row">
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/reactjs.png" alt="">
+                        </div>
+
+                        <h3>ReactJS</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/php.png" alt="">
+                        </div>
+
+                        <h3>PHP</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/java (1).png" alt="">
+                        </div>
+
+                        <h3>Java</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/c.png" alt="">
+                        </div>
+
+                        <h3>C#</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Swift.png" alt="">
+                        </div>
+
+                        <h3>Swift</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Kotlin.png" alt="">
+                        </div>
+
+                        <h3>Kotlin</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/objective-c.png" alt="">
+                        </div>
+
+                        <h3>Objective C</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Laravel (1).png" alt="">
+                        </div>
+
+                        <h3>Laravel</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/CodeIgniter.png" alt="">
+                        </div>
+
+                        <h3>CodeIgniter</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Django.png" alt="">
+                        </div>
+
+                        <h3>Django</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/express.png" alt="">
+                        </div>
+
+                        <h3>Express</h3>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Frontend PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="technologyPages" class="bgs">
+
+    <div class="section_height"></div>
+
+    <div class="container">
+
+        <!-- header Part -->
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+
+                    <h2>Frontend</h2>
+                    <p>What customers think- is important. Our front-end designers make your application or websites looks more professional and eye-catching!</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content  -->
+        <div class="technologyPages_content">
+
+            <div class="row">
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/reactjs.png" alt="">
+                        </div>
+
+                        <h3>ReactJS</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/angularjs.png" alt="">
+                        </div>
+
+                        <h3>AngularJS</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/TypeScript.png" alt="">
+                        </div>
+
+                        <h3>TypeScript</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/vueJS.png" alt="">
+                        </div>
+
+                        <h3>VueJS</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/css3.png" alt="">
+                        </div>
+
+                        <h3>CSS 3</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/html5.png" alt="">
+                        </div>
+
+                        <h3>HTML 5</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/jQuery.png" alt="">
+                        </div>
+
+                        <h3>jQuery</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Bootstrap.png" alt="">
+                        </div>
+
+                        <h3>Bootstrap</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Flutter (1).png" alt="">
+                        </div>
+
+                        <h3>Flutter</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Sass.png" alt="">
+                        </div>
+
+                        <h3>SASS</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/LESS.png" alt="">
+                        </div>
+
+                        <h3>LESS</h3>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Database PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="technologyPages">
+
+    <div class="container">
+
+        <!-- header Part -->
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+
+                    <h2>Database</h2>
+                    <p>We combine data from various complex data sources and administer end-to-end data integration to predict important and actionable insights.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content  -->
+        <div class="technologyPages_content">
+
+            <div class="row">
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/dynamodb.png" alt="">
+                        </div>
+
+                        <h3>DynamoDB</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/mongdb.png" alt="">
+                        </div>
+
+                        <h3>MongoDB</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/aurora.png" alt="">
+                        </div>
+
+                        <h3>Aurora</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/mysql.png" alt="">
+                        </div>
+
+                        <h3>MySQL</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/PostgreSql.png" alt="">
+                        </div>
+
+                        <h3>PostgreSQL</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/MariaDb.png" alt="">
+                        </div>
+
+                        <h3>MariaDB</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/firebase.png" alt="">
+                        </div>
+
+                        <h3>Firebase</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Redis.png" alt="">
+                        </div>
+
+                        <h3>Redis</h3>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Mobile PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="technologyPages" class="bgs">
+
+    <div class="section_height"></div>
+
+    <div class="container">
+
+        <!-- header Part -->
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+
+                    <h2>Mobile</h2>
+                    <p>Get your web-applications on the go! Doodle Inc. provides of multiplatform mobile application development services for pursuing your satisfaction!</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content  -->
+        <div class="technologyPages_content">
+
+            <div class="row">
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/java (1).png" alt="">
+                        </div>
+
+                        <h3>Java</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Kotlin.png" alt="">
+                        </div>
+
+                        <h3>Kotlin</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Swift.png" alt="">
+                        </div>
+
+                        <h3>Swift</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/objective-c.png" alt="">
+                        </div>
+
+                        <h3>Objective C</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/c.png" alt="">
+                        </div>
+
+                        <h3>C#</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Flutter (1).png" alt="">
+                        </div>
+
+                        <h3>Flutter</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/reactjs.png" alt="">
+                        </div>
+
+                        <h3>React Native</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Apache Cordova.png" alt="">
+                        </div>
+
+                        <h3>Apache Cordova</h3>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Cloud & DevOps PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="technologyPages">
+
+    <div class="container">
+
+        <!-- header Part -->
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+
+                    <h2>Cloud & DevOps</h2>
+                    <p>Accelerate your deliveries using flexible and cloud-based technology. Access your application anytime-anywhere with transparency.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content  -->
+        <div class="technologyPages_content">
+
+            <div class="row">
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Kubernetes.png" alt="">
+                        </div>
+
+                        <h3>Kunbernetes</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/CloudFromation.png" alt="">
+                        </div>
+
+                        <h3>AWS Cloud</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Amazon Beanstalk.png" alt="">
+                        </div>
+
+                        <h3>AWS Beanstalk</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Vagrant.png" alt="">
+                        </div>
+
+                        <h3>Vagrant</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/docker (1).png" alt="">
+                        </div>
+
+                        <h3>Docker</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Ansible.png" alt="">
+                        </div>
+
+                        <h3>Ansible</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/Jenkins.png" alt="">
+                        </div>
+
+                        <h3>Jenkins</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/code pipeline.png" alt="">
+                        </div>
+
+                        <h3>AWS Code Pipeline</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/CircleCI.png" alt="">
+                        </div>
+
+                        <h3>CircleCI</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/git.png" alt="">
+                        </div>
+
+                        <h3>Git</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/New Relic.png" alt="">
+                        </div>
+
+                        <h3>New Relic</h3>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Not least to mention PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="technologyPages" class="bgs">
+
+    <div class="section_height"></div>
+
+    <div class="container">
+
+        <!-- header Part -->
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="header">
+
+                    <h2>Not least to mention</h2>
+                    <p>Redefine and improve your business models using advanced technology offerings.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content  -->
+        <div class="technologyPages_content">
+
+            <div class="row">
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/jira.png" alt="">
+                        </div>
+
+                        <h3>JIRA</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/slac.png" alt="">
+                        </div>
+
+                        <h3>Slack</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/git.png" alt="">
+                        </div>
+
+                        <h3>Github</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/apache-m.png" alt="">
+                        </div>
+
+                        <h3>Apache JMeter</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/figma.png" alt="">
+                        </div>
+
+                        <h3>Figma</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/photoshop.png" alt="">
+                        </div>
+
+                        <h3>Photoshop</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/skype.png" alt="">
+                        </div>
+
+                        <h3>Skype</h3>
+
+                    </a>
+
+                </div>
+
+                <!-- Item -->
+                <div class="col-lg-3 aos-init aos-animate" data-aos="flip-up">
+
+                    <a href="" class="technologyPages_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/microsoft--viso.png" alt="">
+                        </div>
+
+                        <h3>Microsoft Visio</h3>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Global Presence The Future With Cutting Edge Digital PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+<section id="GlobalPresence">
+
+    <div class="overlay">
+        <img src="frontend_asset/images/global-future.png" alt="">
+    </div>
+
+    <div class="container">
+
+        <!-- header -->
+        <div class="row">
+
+            <div class="col-lg-6 m-auto">
+
+                <div class="header text-center">
+                    <h2>Global Presence The Future With Cutting Edge Digital</h2>
+                    <p>Doodle Inc. undertakes a wide range of international missions and R&D projects. We are well-known to our customers as a provider of advanced digital solutions in different parts of the world. Most of our clients are from North America and Europe whom we have been helping with a dedicated offshore team, custom-web development, and full-fledged cloud solution.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+    <div class="section_height"></div>
+
+</section>
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START We'll Call You! PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="we_call">
+
+    <div class="container">
+
+        <!-- we_call_overlay -->
+        <div class="we_call_overlay d_flex d_justify">
+            
+            <!-- Left -->
+            <div class="left">
+                <h2 class="wh">We'll Call You!</h2>
+                <p class="wh">Get answers to your questions about lessons, apps and platform instantly!</p>
+            </div>
+    
+            <!-- right -->
+            <div class="right">
+                <div class="custome_input d_flex">
+                    <input type="text" placeholder="Name" class="form-control">
+                    <input type="text" placeholder="Phone Number" class="form-control">
+                </div>
+                <div class="right_arrow d_flex">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            
+    
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="we_call_content">
+
+                    <!-- Header Part -->
+                    <div class="header d_flex d_justify">
+
+                        <div class="left d_flex">
+
+                            <div class="text">
+                                <h2>CUSTOMER SERVICE</h2>
+                                <h3>+880 1751 414 572</h3>
+                            </div>
+    
+                            <div class="img">
+                                <img src="frontend_asset/images/headset.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="left right d_flex">
+
+                            <div class="img">
+                                <img src="frontend_asset/images/whatsapp.png" alt="">
+                            </div>
+
+                            <div class="text">
+                                <h2>WHATS APP HELP</h2>
+                                <h3>+880 1751 414 572</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Talk Or Mail us -->
+                    <div class="we_call_talk d_flex">
+
+                        <!-- Left -->
+                        <div class="left">
+
+                            <h3>Talk <span>Or</span> Mail us</h3>
+                            <div class="">
+                                <a href="tel:01751414572"> <i class="fas fa-phone-alt"></i> +880 1751 414 572</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="mailto:"> <i class="fas fa-envelope"></i> contact@systemdecoder.com</a>
+                            </div>
+
+                            <div class="we_call_talk_img">
+                                <img src="frontend_asset/images/basisfooter.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <!-- Right -->
+                        <div class="left">
+
+                            <h3>Visit Office</h3>
+                            <div class="">
+                                <a href="tel:01751414572"> <i class="fas fa-map-marker-alt"></i> House#28, Road#9, Block#C, Section#12, Pallabi, Dhaka-1216, Bangladesh</a>
+                            </div>
+                            
+                            <div class="social_part">
+
+                                <h3>Our Social Conection</h3>
+
+                                <div class="socila_icon d_flex">
+
+                                    <a href="" class="d_flex">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+            
+                                    <a href="" class="d_flex">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+            
+                                    <a href="" class="d_flex">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+            
+                                    <a href="" class="d_flex">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+            
+                                </div>
+
+                            </div>
+                            
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Footer PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<!-- <footer id="footer">
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <div class="footer_logo">
+
+                    <div class="img">
+                        <img src="frontend_asset/images/footer_logo.png" alt="">
+                    </div>
+
+                    <div class="text">
+                        <p class="wh">Integrio is  a boutique digital transformation consultancy & software development company that provides IT solutions.</p>
+                    </div>
+
+                    <div class="socila_icon d_flex">
+
+                        <a href="" class="d_flex">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="" class="d_flex">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="" class="d_flex">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="" class="d_flex">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-8">
+
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+    
+                        <div class="footer_item">
+        
+                            <h3 class="wh">Service</h3>
+        
+                            <ul>
+        
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Interface Design</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Seo Optimizer</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Graphic Design</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Digital Marketing</a>
+                                </li>
+        
+                            </ul>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-lg-4">
+        
+                        <div class="footer_item">
+        
+                            <h3 class="wh">Service</h3>
+        
+                            <ul>
+        
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Interface Design</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Seo Optimizer</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Graphic Design</a>
+                                </li>
+                                <li>
+                                    <a href="" class="wh"><i class="fas fa-angle-right"></i> Digital Marketing</a>
+                                </li>
+                                
+                            </ul>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-lg-4">
+        
+                        <div class="footer_item">
+        
+                            <h3 class="wh">Contact Us</h3>
+        
+                            <ul>
+        
+                                <li class="wh">
+                                    <i class="fas fa-map-marker-alt"></i> House#28, Road#9, Block#C, Section#12, Pallabi, Dhaka-1216, Bangladesh
+                                </li>
+        
+                                <li class="wh">
+                                    <i class="fas fa-phone-alt"></i> +880 1751 414 572
+                                </li class="wh">
+        
+                                <li class="wh">
+                                    <i class="fas fa-envelope"></i> contact@systemdecoder.com
+                                </li>
+                                
+                            </ul>
+        
+                        </div>
+        
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer> -->
+
+<footer id="tiny_footer" class="text-center">
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-sm-12 col-md-6">
+                <p class="tiny">© 2021 System Decoder | All Rights Reserved.</p>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 col-md-6">
+
+                <ul>
+
+                    <li><a href="">Privacy Policy</a></li>
+
+                    <li><a href="">Terms and Conditions</a></li>
+
+                    <li><a href="">Cookie</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</footer>
+
+<!-- ========== BACK TO TOP START ========== -->
+<a href="#" class="back-to-top">
+    <i class="fa fa-chevron-up"></i>
+</a>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+
+<!-- <div class="p-4">
+    <a href="" class="custome_btn">
+        Draw Border
+    </a>
+</div> -->
+
+
+
+    <!-- JS Link -->
+    <script src="frontend_asset/js/jquery-1.12.4.min.js"></script>
+    <script src="frontend_asset/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend_asset/js/owl.carousel.min.js"></script>
+    <script src="frontend_asset/js/jquery.elevatezoom.js"></script>
+    <script src="frontend_asset/js/slick.js"></script>
+    <script src="frontend_asset/js/all.min.js"></script>
+    <script src="frontend_asset/js/shop.js"></script>
+    <script src="frontend_asset/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
