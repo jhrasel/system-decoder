@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Decoder</title>
+
+    <link rel="icon" href="frontend_asset/images/Logo.png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="frontend_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend_asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="frontend_asset/css/all.min.css">
+    <link rel="stylesheet" href="frontend_asset/css/animate.css">
+    <link rel="stylesheet" href="frontend_asset/css/slick.css">
+    <link rel="stylesheet" href="frontend_asset/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="frontend_asset/css/media.css">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Navbar PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container custome_width">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="frontend_asset/images/Logo.png" alt="logo">
+        </a>
+
+        <!-- Mobile Start -->
+        
+        <div class="Mobile_menu">
+
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <img src="frontend_asset/images/menu_bars.png" alt="">
+            </button>
+              
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    
+                <div class="offcanvas-header">
+                  <h2>Menubars</h2>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+    
+                <div class="offcanvas-body">
+    
+                    <ul class="navbar-nav m-auto">
+    
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+        
+                        <li class="nav-item custome_dropdown">
+                            <a class="nav-link" href="service.html">Services</a>
+        
+                            <!-- <div class="nav_drop_content">
+        
+                                <div class="row d_flex d_justify">
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Software Development.png" alt="Software Development">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Software Development</h3>
+                                                    <p>Custom Software Development</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Security and Compliance.png" alt="Security and Compliance">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Security and Compliance</h3>
+                                                    <p>Network Security</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Advisory.png" alt="Advisory">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Advisory</h3>
+                                                    <p>Digital Transformation</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item last_child">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Advanced Tech.png" alt="Advanced Tech">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Advanced Tech</h3>
+                                                    <p>Artificial Intelligence</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item last_child">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/Artificial Intelligence.png" alt="Artificial Intelligence">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>Artificial Intelligence</h3>
+                                                    <p>Cloud Infrastructure</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="col-lg-4">
+        
+                                        <div class="nav_drop_item last_child">
+        
+                                            <a href="" class="d_flex">
+                                                <div class="img">
+                                                    <img src="frontend_asset/images/nav-drop/BI & Analytics.png" alt="BI & Analytics">
+                                                </div>
+                                                <div class="text">
+                                                    <h3>BI & Analytics</h3>
+                                                    <p>BI Consulting</p>
+                                                </div>
+                                            </a>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                </div>
+        
+                            </div> -->
+        
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="technology.html">Technology</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="career.html">Carrer</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+    
+                    </ul>
+    
+                    <form class="d-flex contact">
+                        <a href="contact.html" class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+                    </form>
+    
+                </div>
+    
+            </div>
+
+        </div>
+        
+        <!-- Mobile End -->
+        
+        
+
+        <div class="collapse navbar-collapse desktop" id="navbarSupportedContent">
+
+            <ul class="navbar-nav m-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item custome_dropdown">
+                    <a class="nav-link" href="service.html">Services</a>
+
+                    <!-- <div class="nav_drop_content">
+
+                        <div class="row d_flex d_justify">
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Software Development.png" alt="Software Development">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Software Development</h3>
+                                            <p>Custom Software Development</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Security and Compliance.png" alt="Security and Compliance">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Security and Compliance</h3>
+                                            <p>Network Security</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Advisory.png" alt="Advisory">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Advisory</h3>
+                                            <p>Digital Transformation</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Advanced Tech.png" alt="Advanced Tech">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Advanced Tech</h3>
+                                            <p>Artificial Intelligence</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/Artificial Intelligence.png" alt="Artificial Intelligence">
+                                        </div>
+                                        <div class="text">
+                                            <h3>Artificial Intelligence</h3>
+                                            <p>Cloud Infrastructure</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4">
+
+                                <div class="nav_drop_item last_child">
+
+                                    <a href="" class="d_flex">
+                                        <div class="img">
+                                            <img src="frontend_asset/images/nav-drop/BI & Analytics.png" alt="BI & Analytics">
+                                        </div>
+                                        <div class="text">
+                                            <h3>BI & Analytics</h3>
+                                            <p>BI Consulting</p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div> -->
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="technology.html">Technology</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="career.html">Carrer</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+
+            </ul>
+
+            <form class="d-flex contact">
+                <a href="contact.html" class="custome_btn btn-12"><span>Click!</span><span>Get A Quote</span></a>
+            </form>
+
+        </div>
+    </div>
+
+</nav>
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Banner PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="service_page_banner">
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-6 m-auto">
+                <h1 class="wh text-center">Service</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="svg-effect">
+        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 170"><defs><linearGradient x1="49.253%" y1="85.804%" x2="49.253%" y2="43.074%" id="a"><stop stop-color="#FFF" offset="0%"></stop><stop stop-color="#FFF" offset="100%"></stop></linearGradient></defs><g fill="none"><path d="M1920 4.719v69.5c-362.63 60.036-692.797 55.536-990.5-13.5C565.833-23.615 256 12.813 0 170L1 4.719h1919z" fill="url(#a)" transform="rotate(180 960.5 87.36)"></path><path d="M1 170V99c269.033-70.44 603.533-66.44 1003.5 12C1494 207 1921 4.719 1921 4.719L1920 170H1z" fill-opacity=".3" fill="#FFF"></path><path d="M1 170.75V99C373.115 4.216 705.281-4.951 997.5 71.5c365.667 95.667 673.5 73.406 923.5-66.781l-1 166.031H1z" fill-opacity=".3" fill="#FFF"></path><path d="M1 170v-67C400.333-1.333 744.167-19 1032.5 50c432.5 103.5 754 19.219 888.5-45.281l-1 166.031L1 170z" fill-opacity=".35" fill="#FFF"></path></g></svg>
+    </div>
+
+</section>
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Service Item PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="service_page_service">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <!-- item -->
+            <div class="col-lg-4">
+
+                <div class="item d_flex">
+
+                    <!-- img -->
+                    <div class="img">
+                        <img src="frontend_asset/images/ser_searching.png" alt="">
+                        <span>01</span>
+                    </div>
+
+                    <!-- text -->
+                    <div class="text">
+
+                        <h3>Search Engine Optimization</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                        <a href="" class="service_read">Read More</a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- item -->
+            <div class="col-lg-4">
+
+                <div class="item d_flex">
+
+                    <!-- img -->
+                    <div class="img">
+                        <img src="frontend_asset/images/ser_bullhorn.png" alt="">
+                        <span>01</span>
+                    </div>
+
+                    <!-- text -->
+                    <div class="text">
+
+                        <h3>Online Media Management</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                        <a href="" class="service_read">Read More</a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- item -->
+            <div class="col-lg-4">
+
+                <div class="item d_flex">
+
+                    <!-- img -->
+                    <div class="img">
+                        <img src="frontend_asset/images/ser_software.png" alt="">
+                        <span>01</span>
+                    </div>
+
+                    <!-- text -->
+                    <div class="text">
+
+                        <h3>Web Software Development</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                        <a href="" class="service_read">Read More</a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Service Feature PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="service_page_feature">
+
+    <div class="container custome_width">
+
+        <div class="row d_flex">
+
+            <!-- img -->
+            <div class="col-lg-6">
+
+                <div class="feature_img">
+
+                    <img src="frontend_asset/images/service_feature.jpg" class="img-fluid" alt="">
+
+                    <div class="overlay">
+                        <img src="frontend_asset/images/trophy.png" alt="">
+                        <h3>2050+</h3>
+                        <p>Complete Projects</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="feature_content_header feature_content">
+
+                    <h4>OUR FEATURED SERVICES</h4>
+                    <h2>We Offer a Wide Variety of Best SEO Features Services</h2>
+                    <p>Donec pulvinar tellus egetmagna aliquet ultricies. nec eleifend sem convallis vitae. soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+
+                    <ul>
+                        <li>General Consulting</li>
+                        <li>Clean & Modern Design</li>
+                        <li>Construction Management</li>
+                        <li>Digital Processing</li>
+                        <li>Modeling & Algorithm</li>
+                        <li>Business Intelligence</li>
+                        <li>Data Visulization</li>
+                        <li>Data Analytics</li>
+                    </ul>
+
+                    <a href="" class="custome_btn btn-12"><span>Click!</span><span>Read More</span></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Feature Service PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="FeatureService">
+
+    <div class="section_height"></div>
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="feature_content_header text-center">
+                    <h4>OUR FEATURED SERVICES</h4>
+                    <h2>Best SEO Features Services</h2>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="FeatureService_content">
+
+            <div class="row">
+
+                <!-- item -->
+                <div class="col-lg-3">
+
+                    <div class="FeatureService_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/ser_searching.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h3>Search Engine Optimization</h3>
+                            <p>Lorem ipsum dolor amet, websites that will make you more successful, Donec pulvinar tellus egetmagna aliquet ultricies.</p>
+                            <a href="" class="service_read">Read More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-3">
+
+                    <div class="FeatureService_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/ser_bullhorn.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h3>Social Media Strategy</h3>
+                            <p>Lorem ipsum dolor amet, websites that will make you more successful, Donec pulvinar tellus egetmagna aliquet ultricies.</p>
+                            <a href="" class="service_read">Read More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-3">
+
+                    <div class="FeatureService_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/ser_bullhorn.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h3>Online Media Management</h3>
+                            <p>Lorem ipsum dolor amet, websites that will make you more successful, Donec pulvinar tellus egetmagna aliquet ultricies.</p>
+                            <a href="" class="service_read">Read More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-3">
+
+                    <div class="FeatureService_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/ser_searching.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h3>Reporting & Analysis</h3>
+                            <p>Lorem ipsum dolor amet, websites that will make you more successful, Donec pulvinar tellus egetmagna aliquet ultricies.</p>
+                            <a href="" class="service_read">Read More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-3">
+
+                    <div class="FeatureService_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/ser_software.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h3>Software Development</h3>
+                            <p>Lorem ipsum dolor amet, websites that will make you more successful, Donec pulvinar tellus egetmagna aliquet ultricies.</p>
+                            <a href="" class="service_read">Read More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-3">
+
+                    <div class="FeatureService_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/system.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h3>Analytic Solutions</h3>
+                            <p>Lorem ipsum dolor amet, websites that will make you more successful, Donec pulvinar tellus egetmagna aliquet ultricies.</p>
+                            <a href="" class="service_read">Read More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-3">
+
+                    <div class="FeatureService_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/digital-marketing.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h3>Digital Marketing</h3>
+                            <p>Lorem ipsum dolor amet, websites that will make you more successful, Donec pulvinar tellus egetmagna aliquet ultricies.</p>
+                            <a href="" class="service_read">Read More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-3">
+
+                    <div class="FeatureService_item">
+
+                        <div class="img">
+                            <img src="frontend_asset/images/app-development.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor amet, websites that will make you more successful, Donec pulvinar tellus egetmagna aliquet ultricies.</p>
+                            <a href="" class="service_read">Read More</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+
+<div class="section_height"></div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Service Price Plan PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="service_price_plan">
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-8 m-auto">
+
+                <div class="feature_content_header text-center">
+                    <h4>OUR PRICING PLANS</h4>
+                    <h2>Best SEO Plan & Package</h2>
+                    <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus egetmagna aliquet ultricies. nec eleifend sem convallis vitae.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- service_price_plan Content -->
+        <div class="service_price_plan_content">
+
+            <div class="row">
+
+                <!-- item -->
+                <div class="col-lg-4">
+                    
+                    <div class="service_price_plan_item">
+
+                        <!-- img -->
+                        <div class="img">
+                            <img src="frontend_asset/images/dowload.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h4>Basic Plan</h4>
+                            <h2>$125.00 <span>Per Month</span></h2>
+
+                            <ul>
+                                <li> <i class="fas fa-check"></i> Consectetur Adipisicing</li>
+                                <li> <i class="fas fa-check"></i> incididunt ut labore</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                            </ul>
+
+                            <a href=""> GET START NOW</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-4">
+                    
+                    <div class="service_price_plan_item bg_item">
+
+                        <!-- img -->
+                        <div class="img">
+                            <img src="frontend_asset/images/worldwide.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h4>Professional Plan</h4>
+                            <h2>$159.00 <span>Per Month</span></h2>
+
+                            <ul>
+                                <li> <i class="fas fa-check"></i> Consectetur Adipisicing</li>
+                                <li> <i class="fas fa-check"></i> incididunt ut labore</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                            </ul>
+
+                            <a href=""> GET START NOW</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- item -->
+                <div class="col-lg-4">
+                    
+                    <div class="service_price_plan_item">
+
+                        <!-- img -->
+                        <div class="img">
+                            <img src="frontend_asset/images/box.png" alt="">
+                        </div>
+
+                        <div class="text">
+
+                            <h4>Premium Plan</h4>
+                            <h2>$199.00 <span>Per Month</span></h2>
+
+                            <ul>
+                                <li> <i class="fas fa-check"></i> Consectetur Adipisicing</li>
+                                <li> <i class="fas fa-check"></i> incididunt ut labore</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                                <li> <i class="fas fa-check"></i> Dolor sit Amet</li>
+                            </ul>
+
+                            <a href=""> GET START NOW</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section_height"></div>
+
+</section>
+
+<div class="section_height"></div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START We'll Call You! PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+<section id="we_call">
+
+    <div class="container">
+
+        <!-- we_call_overlay -->
+        <div class="we_call_overlay d_flex d_justify">
+            
+            <!-- Left -->
+            <div class="left">
+                <h2 class="wh">We'll Call You!</h2>
+                <p class="wh">Get answers to your questions about lessons, apps and platform instantly!</p>
+            </div>
+    
+            <!-- right -->
+            <div class="right">
+                <div class="custome_input d_flex">
+                    <input type="text" placeholder="Name" class="form-control">
+                    <input type="text" placeholder="Phone Number" class="form-control">
+                </div>
+                <div class="right_arrow d_flex">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            
+    
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="we_call_content">
+
+                    <!-- Header Part -->
+                    <div class="header d_flex d_justify">
+
+                        <div class="left d_flex">
+
+                            <div class="text">
+                                <h2>CUSTOMER SERVICE</h2>
+                                <h3>+880 1751 414 572</h3>
+                            </div>
+    
+                            <div class="img">
+                                <img src="frontend_asset/images/headset.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <div class="left right d_flex">
+
+                            <div class="img">
+                                <img src="frontend_asset/images/whatsapp.png" alt="">
+                            </div>
+
+                            <div class="text">
+                                <h2>WHATS APP HELP</h2>
+                                <h3>+880 1751 414 572</h3>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Talk Or Mail us -->
+                    <div class="we_call_talk d_flex">
+
+                        <!-- Left -->
+                        <div class="left">
+
+                            <h3>Talk <span>Or</span> Mail us</h3>
+                            <div class="">
+                                <a href="tel:01751414572"> <i class="fas fa-phone-alt"></i> +880 1751 414 572</a>
+                            </div>
+                            
+                            <div class="">
+                                <a href="mailto:"> <i class="fas fa-envelope"></i> contact@systemdecoder.com</a>
+                            </div>
+
+                            <div class="we_call_talk_img">
+                                <img src="frontend_asset/images/basisfooter.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <!-- Right -->
+                        <div class="left">
+
+                            <h3>Visit Office</h3>
+                            <div class="">
+                                <a href="tel:01751414572"> <i class="fas fa-map-marker-alt"></i> House#28, Road#9, Block#C, Section#12, Pallabi, Dhaka-1216, Bangladesh</a>
+                            </div>
+                            
+                            <div class="social_part">
+
+                                <h3>Our Social Conection</h3>
+
+                                <div class="socila_icon d_flex">
+
+                                    <a href="" class="d_flex">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+            
+                                    <a href="" class="d_flex">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+            
+                                    <a href="" class="d_flex">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+            
+                                    <a href="" class="d_flex">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+            
+                                </div>
+
+                            </div>
+                            
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Footer PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+<footer id="tiny_footer" class="text-center">
+
+    <div class="container custome_width">
+
+        <div class="row">
+
+            <div class="col-lg-6 col-sm-12 col-md-6">
+                <p class="tiny">© 2021 System Decoder | All Rights Reserved.</p>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 col-md-6">
+
+                <ul>
+
+                    <li><a href="">Privacy Policy</a></li>
+
+                    <li><a href="">Terms and Conditions</a></li>
+
+                    <li><a href="">Cookie</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</footer>
+
+<!-- ========== BACK TO TOP START ========== -->
+<a href="#" class="back-to-top">
+    <i class="fa fa-chevron-up"></i>
+</a>
+
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+---------------------------------------------------------------------------------------------------------------------------------------------------  -->
+
+
+<!-- <div class="p-4">
+    <a href="" class="custome_btn">
+        Draw Border
+    </a>
+</div> -->
+
+
+
+    <!-- JS Link -->
+    <script src="frontend_asset/js/jquery-1.12.4.min.js"></script>
+    <script src="frontend_asset/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend_asset/js/owl.carousel.min.js"></script>
+    <script src="frontend_asset/js/jquery.elevatezoom.js"></script>
+    <script src="frontend_asset/js/slick.js"></script>
+    <script src="frontend_asset/js/all.min.js"></script>
+    <script src="frontend_asset/js/shop.js"></script>
+    <script src="frontend_asset/js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
