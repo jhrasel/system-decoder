@@ -3080,6 +3080,90 @@ a.service_read:hover:before {
     color: var(--bg_color2);
 }
 
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Service Details PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.Left_menubar{
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.Left_menubar ul li a{
+    padding: 15px 20px;
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--header_color);
+    transition: all linear 0.3s ;
+    border-bottom: 5px solid #FFF;
+    background: rgba(59, 84, 219, 0.07);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.Left_menubar ul li a::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0px;
+    left: 0;
+    top: 0;
+    background: var(--bg_color2);
+    opacity: 0;
+    transition: all linear 0.2s ;
+}
+
+.Left_menubar ul li a:hover{
+    color: var(--bg_color2);
+}
+
+.Left_menubar ul li a:hover::after{
+    opacity: 1;
+    width: 3px;
+}
+
+.right_content img{
+    width: 100%;
+}
+
+.right_content .img p{
+    margin-top: 30px;
+}
+
+.right_content .item1_content{
+    margin-top: 50px;
+}
+
+.right_content .FeatureService_item img{
+    width: auto;
+}
+
+.right_content .FeatureService_item {
+    min-height: 220px;
+}
+
+.item1_content_part{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.Our_Leadership_Team{
+    margin-top: 30px;
+}
+
+.Our_Leadership_Team h3{
+    font-size: 30px;
+}
+
+/* Our_Leadership_Team_slider */
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START custome_custome_custome_btn Effect PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
